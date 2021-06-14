@@ -533,15 +533,6 @@
                                     <action selector="noteC5:" destination="1G2-06-JPp" eventType="touchUpInside" id="Trt-Ll-oqX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXu-q2-gl0">
-                                <rect key="frame" x="289" y="152" width="109" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="TestPlay"/>
-                                <connections>
-                                    <action selector="testPlayButton:" destination="1G2-06-JPp" eventType="touchUpInside" id="btc-ms-xpH"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tik-FB-ho1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

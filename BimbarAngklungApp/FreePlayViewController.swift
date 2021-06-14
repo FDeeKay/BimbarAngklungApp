@@ -14,6 +14,7 @@ class FreePlayViewController: UIViewController {
         super.viewDidLoad()
         freePlayImage.image = UIImage(named: "AngklungTest")
         angklungNote = 0
+        becomeFirstResponder()
         // Do any additional setup after loading the view.
     }
     
@@ -103,10 +104,15 @@ class FreePlayViewController: UIViewController {
         angklungSound.prepareToPlay()
     }
     
-    @IBAction func testPlayButton(_ sender: Any) {
+    
+    override var canBecomeFirstResponder: Bool {
+        return true
+    }
+    
+    override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         angklungSound.play()
     }
     
-    
+
     
 }
