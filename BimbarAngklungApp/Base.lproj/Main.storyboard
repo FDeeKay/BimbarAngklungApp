@@ -459,6 +459,9 @@
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="noteC4:" destination="1G2-06-JPp" eventType="touchUpInside" id="j1b-hK-rhy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1c-ut-FPM">
                                 <rect key="frame" x="139" y="675" width="60" height="60"/>
@@ -466,6 +469,9 @@
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="noteD4:" destination="1G2-06-JPp" eventType="touchUpInside" id="6AT-lU-yjI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tg8-sK-4CS">
                                 <rect key="frame" x="229" y="675" width="60" height="60"/>
@@ -473,6 +479,9 @@
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="noteE4:" destination="1G2-06-JPp" eventType="touchUpInside" id="s7j-cA-FZv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="312-xn-jru">
                                 <rect key="frame" x="319" y="675" width="60" height="60"/>
@@ -480,6 +489,9 @@
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="4"/>
+                                <connections>
+                                    <action selector="noteF4:" destination="1G2-06-JPp" eventType="touchUpInside" id="9wC-g3-hD3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lV1-99-ZVG">
                                 <rect key="frame" x="49" y="775" width="60" height="60"/>
@@ -487,6 +499,9 @@
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="5"/>
+                                <connections>
+                                    <action selector="noteG4:" destination="1G2-06-JPp" eventType="touchUpInside" id="cgV-iS-1y3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXG-Tv-oVI">
                                 <rect key="frame" x="139" y="775" width="60" height="60"/>
@@ -494,6 +509,9 @@
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="6"/>
+                                <connections>
+                                    <action selector="noteA4:" destination="1G2-06-JPp" eventType="touchUpInside" id="aSO-ok-4Ta"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzY-Ci-34F">
                                 <rect key="frame" x="229" y="775" width="60" height="60"/>
@@ -501,6 +519,9 @@
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="7"/>
+                                <connections>
+                                    <action selector="noteB4:" destination="1G2-06-JPp" eventType="touchUpInside" id="8v3-yZ-AbD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXn-XW-svd">
                                 <rect key="frame" x="319" y="775" width="60" height="60"/>
@@ -508,12 +529,27 @@
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="1."/>
+                                <connections>
+                                    <action selector="noteC5:" destination="1G2-06-JPp" eventType="touchUpInside" id="Trt-Ll-oqX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXu-q2-gl0">
+                                <rect key="frame" x="289" y="152" width="109" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="TestPlay"/>
+                                <connections>
+                                    <action selector="testPlayButton:" destination="1G2-06-JPp" eventType="touchUpInside" id="btc-ms-xpH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tik-FB-ho1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="aiV-SY-GuQ"/>
+                    <connections>
+                        <outlet property="freePlayImage" destination="bUb-Jc-3g1" id="RAn-L4-LWV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iir-zf-MkM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
