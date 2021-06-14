@@ -16,6 +16,14 @@
 		8F26BD372677919900F020D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F26BD352677919900F020D7 /* LaunchScreen.storyboard */; };
 		8F26BD422677919900F020D7 /* BimbarAngklungAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F26BD412677919900F020D7 /* BimbarAngklungAppTests.swift */; };
 		8F26BD4D2677919900F020D7 /* BimbarAngklungAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F26BD4C2677919900F020D7 /* BimbarAngklungAppUITests.swift */; };
+		8F26BD7626779B8E00F020D7 /* B4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8F26BD6E26779B8E00F020D7 /* B4.aiff */; };
+		8F26BD7726779B8E00F020D7 /* C4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8F26BD6F26779B8E00F020D7 /* C4.aiff */; };
+		8F26BD7826779B8E00F020D7 /* C5.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8F26BD7026779B8E00F020D7 /* C5.aiff */; };
+		8F26BD7926779B8E00F020D7 /* D4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8F26BD7126779B8E00F020D7 /* D4.aiff */; };
+		8F26BD7A26779B8E00F020D7 /* E4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8F26BD7226779B8E00F020D7 /* E4.aiff */; };
+		8F26BD7B26779B8E00F020D7 /* G4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8F26BD7326779B8E00F020D7 /* G4.aiff */; };
+		8F26BD7C26779B8E00F020D7 /* A4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8F26BD7426779B8E00F020D7 /* A4.aiff */; };
+		8F26BD7D26779B8E00F020D7 /* F4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8F26BD7526779B8E00F020D7 /* F4.aiff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,14 @@
 		8F26BD482677919900F020D7 /* BimbarAngklungAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BimbarAngklungAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F26BD4C2677919900F020D7 /* BimbarAngklungAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BimbarAngklungAppUITests.swift; sourceTree = "<group>"; };
 		8F26BD4E2677919900F020D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F26BD6E26779B8E00F020D7 /* B4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = B4.aiff; path = Sounds/B4.aiff; sourceTree = SOURCE_ROOT; };
+		8F26BD6F26779B8E00F020D7 /* C4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = C4.aiff; path = Sounds/C4.aiff; sourceTree = SOURCE_ROOT; };
+		8F26BD7026779B8E00F020D7 /* C5.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = C5.aiff; path = Sounds/C5.aiff; sourceTree = SOURCE_ROOT; };
+		8F26BD7126779B8E00F020D7 /* D4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = D4.aiff; path = Sounds/D4.aiff; sourceTree = SOURCE_ROOT; };
+		8F26BD7226779B8E00F020D7 /* E4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = E4.aiff; path = Sounds/E4.aiff; sourceTree = SOURCE_ROOT; };
+		8F26BD7326779B8E00F020D7 /* G4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = G4.aiff; path = Sounds/G4.aiff; sourceTree = SOURCE_ROOT; };
+		8F26BD7426779B8E00F020D7 /* A4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = A4.aiff; path = Sounds/A4.aiff; sourceTree = SOURCE_ROOT; };
+		8F26BD7526779B8E00F020D7 /* F4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = F4.aiff; path = Sounds/F4.aiff; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +122,7 @@
 				8F26BD2B2677919800F020D7 /* ViewController.swift */,
 				8F26BD2D2677919800F020D7 /* Main.storyboard */,
 				8F26BD332677919900F020D7 /* Assets.xcassets */,
+				8F26BD6C26779B4D00F020D7 /* Sounds */,
 				8F26BD352677919900F020D7 /* LaunchScreen.storyboard */,
 				8F26BD382677919900F020D7 /* Info.plist */,
 				8F26BD302677919800F020D7 /* BimbarAngklungApp.xcdatamodeld */,
@@ -129,6 +146,21 @@
 				8F26BD4E2677919900F020D7 /* Info.plist */,
 			);
 			path = BimbarAngklungAppUITests;
+			sourceTree = "<group>";
+		};
+		8F26BD6C26779B4D00F020D7 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				8F26BD7426779B8E00F020D7 /* A4.aiff */,
+				8F26BD6E26779B8E00F020D7 /* B4.aiff */,
+				8F26BD6F26779B8E00F020D7 /* C4.aiff */,
+				8F26BD7026779B8E00F020D7 /* C5.aiff */,
+				8F26BD7126779B8E00F020D7 /* D4.aiff */,
+				8F26BD7226779B8E00F020D7 /* E4.aiff */,
+				8F26BD7526779B8E00F020D7 /* F4.aiff */,
+				8F26BD7326779B8E00F020D7 /* G4.aiff */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,8 +266,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F26BD7726779B8E00F020D7 /* C4.aiff in Resources */,
+				8F26BD7926779B8E00F020D7 /* D4.aiff in Resources */,
 				8F26BD372677919900F020D7 /* LaunchScreen.storyboard in Resources */,
+				8F26BD7B26779B8E00F020D7 /* G4.aiff in Resources */,
+				8F26BD7626779B8E00F020D7 /* B4.aiff in Resources */,
+				8F26BD7A26779B8E00F020D7 /* E4.aiff in Resources */,
+				8F26BD7826779B8E00F020D7 /* C5.aiff in Resources */,
+				8F26BD7D26779B8E00F020D7 /* F4.aiff in Resources */,
 				8F26BD342677919900F020D7 /* Assets.xcassets in Resources */,
+				8F26BD7C26779B8E00F020D7 /* A4.aiff in Resources */,
 				8F26BD2F2677919800F020D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,7 +490,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Bimbar.BimbarAngklungApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -469,7 +509,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Bimbar.BimbarAngklungApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

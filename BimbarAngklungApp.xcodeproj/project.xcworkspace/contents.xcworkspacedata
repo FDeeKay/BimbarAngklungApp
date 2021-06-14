@@ -2,6 +2,30 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../Sounds/A4.aiff">
+   </FileRef>
+   <FileRef
+      location = "group:../Sounds/B4.aiff">
+   </FileRef>
+   <FileRef
+      location = "group:../Sounds/C4.aiff">
+   </FileRef>
+   <FileRef
+      location = "group:../Sounds/C5.aiff">
+   </FileRef>
+   <FileRef
+      location = "group:../Sounds/D4.aiff">
+   </FileRef>
+   <FileRef
+      location = "group:../Sounds/E4.aiff">
+   </FileRef>
+   <FileRef
+      location = "group:../Sounds/F4.aiff">
+   </FileRef>
+   <FileRef
+      location = "group:../Sounds/G4.aiff">
+   </FileRef>
+   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>

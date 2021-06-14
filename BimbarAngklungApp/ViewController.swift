@@ -11,9 +11,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        mainImage.image = UIImage(named: "AngklungTest")
         // Do any additional setup after loading the view.
     }
 
-
+    @IBOutlet weak var mainImage: UIImageView!
+    
 }
 
