@@ -25,6 +25,14 @@
 		8F26BD7C26779B8E00F020D7 /* A4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8F26BD7426779B8E00F020D7 /* A4.aiff */; };
 		8F26BD7D26779B8E00F020D7 /* F4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8F26BD7526779B8E00F020D7 /* F4.aiff */; };
 		8FCCCCB62677C788009FAC16 /* FreePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCCCCB52677C788009FAC16 /* FreePlayViewController.swift */; };
+		8FCCCCC02677D387009FAC16 /* E4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8FCCCCB82677D387009FAC16 /* E4.aiff */; };
+		8FCCCCC12677D387009FAC16 /* G4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8FCCCCB92677D387009FAC16 /* G4.aiff */; };
+		8FCCCCC22677D387009FAC16 /* C5.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8FCCCCBA2677D387009FAC16 /* C5.aiff */; };
+		8FCCCCC32677D387009FAC16 /* C4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8FCCCCBB2677D387009FAC16 /* C4.aiff */; };
+		8FCCCCC42677D387009FAC16 /* A4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8FCCCCBC2677D387009FAC16 /* A4.aiff */; };
+		8FCCCCC52677D387009FAC16 /* F4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8FCCCCBD2677D387009FAC16 /* F4.aiff */; };
+		8FCCCCC62677D387009FAC16 /* D4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8FCCCCBE2677D387009FAC16 /* D4.aiff */; };
+		8FCCCCC72677D387009FAC16 /* B4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8FCCCCBF2677D387009FAC16 /* B4.aiff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +77,14 @@
 		8F26BD7426779B8E00F020D7 /* A4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = A4.aiff; path = Sounds/A4.aiff; sourceTree = SOURCE_ROOT; };
 		8F26BD7526779B8E00F020D7 /* F4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = F4.aiff; path = Sounds/F4.aiff; sourceTree = SOURCE_ROOT; };
 		8FCCCCB52677C788009FAC16 /* FreePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreePlayViewController.swift; sourceTree = "<group>"; };
+		8FCCCCB82677D387009FAC16 /* E4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = E4.aiff; sourceTree = "<group>"; };
+		8FCCCCB92677D387009FAC16 /* G4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = G4.aiff; sourceTree = "<group>"; };
+		8FCCCCBA2677D387009FAC16 /* C5.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = C5.aiff; sourceTree = "<group>"; };
+		8FCCCCBB2677D387009FAC16 /* C4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = C4.aiff; sourceTree = "<group>"; };
+		8FCCCCBC2677D387009FAC16 /* A4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = A4.aiff; sourceTree = "<group>"; };
+		8FCCCCBD2677D387009FAC16 /* F4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = F4.aiff; sourceTree = "<group>"; };
+		8FCCCCBE2677D387009FAC16 /* D4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = D4.aiff; sourceTree = "<group>"; };
+		8FCCCCBF2677D387009FAC16 /* B4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = B4.aiff; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +135,7 @@
 		8F26BD262677919800F020D7 /* BimbarAngklungApp */ = {
 			isa = PBXGroup;
 			children = (
+				8FCCCCB72677D387009FAC16 /* Sounds */,
 				8F26BD272677919800F020D7 /* AppDelegate.swift */,
 				8F26BD292677919800F020D7 /* SceneDelegate.swift */,
 				8F26BD2B2677919800F020D7 /* ViewController.swift */,
@@ -165,6 +182,21 @@
 			);
 			path = Sounds;
 			sourceTree = "<group>";
+		};
+		8FCCCCB72677D387009FAC16 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				8FCCCCB82677D387009FAC16 /* E4.aiff */,
+				8FCCCCB92677D387009FAC16 /* G4.aiff */,
+				8FCCCCBA2677D387009FAC16 /* C5.aiff */,
+				8FCCCCBB2677D387009FAC16 /* C4.aiff */,
+				8FCCCCBC2677D387009FAC16 /* A4.aiff */,
+				8FCCCCBD2677D387009FAC16 /* F4.aiff */,
+				8FCCCCBE2677D387009FAC16 /* D4.aiff */,
+				8FCCCCBF2677D387009FAC16 /* B4.aiff */,
+			);
+			path = Sounds;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -269,13 +301,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FCCCCC42677D387009FAC16 /* A4.aiff in Resources */,
+				8FCCCCC32677D387009FAC16 /* C4.aiff in Resources */,
+				8FCCCCC02677D387009FAC16 /* E4.aiff in Resources */,
+				8FCCCCC62677D387009FAC16 /* D4.aiff in Resources */,
 				8F26BD7726779B8E00F020D7 /* C4.aiff in Resources */,
+				8FCCCCC12677D387009FAC16 /* G4.aiff in Resources */,
 				8F26BD7926779B8E00F020D7 /* D4.aiff in Resources */,
 				8F26BD372677919900F020D7 /* LaunchScreen.storyboard in Resources */,
+				8FCCCCC72677D387009FAC16 /* B4.aiff in Resources */,
 				8F26BD7B26779B8E00F020D7 /* G4.aiff in Resources */,
 				8F26BD7626779B8E00F020D7 /* B4.aiff in Resources */,
+				8FCCCCC22677D387009FAC16 /* C5.aiff in Resources */,
 				8F26BD7A26779B8E00F020D7 /* E4.aiff in Resources */,
 				8F26BD7826779B8E00F020D7 /* C5.aiff in Resources */,
+				8FCCCCC52677D387009FAC16 /* F4.aiff in Resources */,
 				8F26BD7D26779B8E00F020D7 /* F4.aiff in Resources */,
 				8F26BD342677919900F020D7 /* Assets.xcassets in Resources */,
 				8F26BD7C26779B8E00F020D7 /* A4.aiff in Resources */,
