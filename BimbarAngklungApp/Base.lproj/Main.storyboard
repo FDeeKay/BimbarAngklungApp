@@ -34,8 +34,11 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yNA-mE-HEp">
                                 <rect key="frame" x="20" y="248" width="388" height="431"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Wij-ID-BQm" appends="YES" id="kNw-tH-pOa"/>
+                                    <outletCollection property="gestureRecognizers" destination="Wij-ID-BQm" appends="YES" id="sMP-Uc-i0p"/>
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dF-Hm-jyu">
@@ -55,7 +58,7 @@
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="MTa-UQ-ICD" kind="show" id="XW6-iW-IHH"/>
+                                    <segue destination="MTa-UQ-ICD" kind="show" id="AFi-AV-93I"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cv2-Vp-8Zh">
@@ -72,9 +75,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="Wij-ID-BQm" appends="YES" id="Jhm-zY-Io4"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="tt8-WE-PFd"/>
                     <connections>
@@ -84,7 +84,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Wij-ID-BQm">
                     <connections>
-                        <segue destination="1G2-06-JPp" kind="show" id="zeO-q1-BHQ"/>
+                        <segue destination="1G2-06-JPp" kind="show" id="6Ex-CR-FuN"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -420,10 +420,10 @@
             </objects>
             <point key="canvasLocation" x="-10" y="251"/>
         </scene>
-        <!--View Controller-->
+        <!--Free Play View Controller-->
         <scene sceneID="cvk-qE-zIJ">
             <objects>
-                <viewController id="1G2-06-JPp" sceneMemberID="viewController">
+                <viewController id="1G2-06-JPp" customClass="FreePlayViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dSn-aR-fGr">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

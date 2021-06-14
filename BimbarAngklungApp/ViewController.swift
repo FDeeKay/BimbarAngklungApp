@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mainImage.image = UIImage(named: "AngklungTest")
+        mainImage.isUserInteractionEnabled = true
         // Do any additional setup after loading the view.
     }
 
