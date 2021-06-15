@@ -58,7 +58,7 @@
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="MTa-UQ-ICD" kind="show" id="AFi-AV-93I"/>
+                                    <segue destination="MTa-UQ-ICD" kind="show" id="AWC-Uj-ND1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cv2-Vp-8Zh">
@@ -90,29 +90,29 @@
             </objects>
             <point key="canvasLocation" x="1021" y="251"/>
         </scene>
-        <!--View Controller-->
+        <!--Level Selection View Controller-->
         <scene sceneID="Pmh-C2-4cq">
             <objects>
-                <viewController id="MTa-UQ-ICD" sceneMemberID="viewController">
+                <viewController id="MTa-UQ-ICD" customClass="LevelSelectionViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TUH-ZN-jJb">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DLx-iw-04X">
-                                <rect key="frame" x="0.0" y="232" width="428" height="607"/>
+                                <rect key="frame" x="20" y="232" width="388" height="607"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="f8l-17-Kki"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="kOU-Q2-ecT"/>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick a song" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1id-h6-hGj">
-                                <rect key="frame" x="20" y="88" width="388" height="42"/>
+                                <rect key="frame" x="20" y="100" width="388" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="to play!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhO-BM-dhu">
-                                <rect key="frame" x="20" y="138" width="388" height="54"/>
+                                <rect key="frame" x="20" y="150" width="388" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <nil key="textColor"/>
@@ -126,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vx5-fX-GGK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2400" y="-509"/>
+            <point key="canvasLocation" x="2400" y="-509.28725701943847"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PBH-8R-7vM">

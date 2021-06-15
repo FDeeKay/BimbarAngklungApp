@@ -25,6 +25,7 @@
 		8FCCCCD62677D824009FAC16 /* D4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8FCCCCCE2677D824009FAC16 /* D4.aiff */; };
 		8FCCCCD72677D824009FAC16 /* G4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8FCCCCCF2677D824009FAC16 /* G4.aiff */; };
 		8FCCCCD82677D824009FAC16 /* B4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8FCCCCD02677D824009FAC16 /* B4.aiff */; };
+		8FCCCCDA26788E8E009FAC16 /* LevelSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCCCCD926788E8E009FAC16 /* LevelSelectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		8FCCCCCE2677D824009FAC16 /* D4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = D4.aiff; sourceTree = "<group>"; };
 		8FCCCCCF2677D824009FAC16 /* G4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = G4.aiff; sourceTree = "<group>"; };
 		8FCCCCD02677D824009FAC16 /* B4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = B4.aiff; sourceTree = "<group>"; };
+		8FCCCCD926788E8E009FAC16 /* LevelSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				8F26BD2B2677919800F020D7 /* ViewController.swift */,
 				8F26BD2D2677919800F020D7 /* Main.storyboard */,
 				8FCCCCB52677C788009FAC16 /* FreePlayViewController.swift */,
+				8FCCCCD926788E8E009FAC16 /* LevelSelectionViewController.swift */,
 				8F26BD332677919900F020D7 /* Assets.xcassets */,
 				8F26BD352677919900F020D7 /* LaunchScreen.storyboard */,
 				8F26BD382677919900F020D7 /* Info.plist */,
@@ -304,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FCCCCDA26788E8E009FAC16 /* LevelSelectionViewController.swift in Sources */,
 				8F26BD2C2677919800F020D7 /* ViewController.swift in Sources */,
 				8FCCCCB62677C788009FAC16 /* FreePlayViewController.swift in Sources */,
 				8F26BD282677919800F020D7 /* AppDelegate.swift in Sources */,
