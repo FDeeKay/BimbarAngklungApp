@@ -7,7 +7,23 @@
 
 import UIKit
 
-class LevelSelectionViewController: UIViewController {
+class LevelSelectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return levelSelectionImages.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+            as! LevelSelectionViewCell
+        
+        cell.levelSelectionImage.image = UIImage(named: levelSelectionImages[indexPath.row])
+        cell.levelSelectionImage.layer.cornerRadius = 50.0
+        return cell
+    }
+    
+    
+    var levelSelectionImages:[String] = ["song1","song2","song3"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,14 +32,6 @@ class LevelSelectionViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

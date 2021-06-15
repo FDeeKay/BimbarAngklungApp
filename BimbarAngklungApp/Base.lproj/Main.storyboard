@@ -6,6 +6,7 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -98,12 +99,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DLx-iw-04X">
-                                <rect key="frame" x="20" y="232" width="388" height="607"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="f8l-17-Kki"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="kOU-Q2-ecT"/>
-                            </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick a song" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1id-h6-hGj">
                                 <rect key="frame" x="20" y="100" width="388" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -118,6 +113,46 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fa3-Yw-1nf">
+                                <rect key="frame" x="20" y="212" width="388" height="420"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ES1-mR-Zyb">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="cell" id="73D-yV-pQh" customClass="LevelSelectionViewCell" customModule="BimbarAngklungApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="10" width="350" height="400"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="O1I-Vf-bLt">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="400"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="song1" translatesAutoresizingMaskIntoConstraints="NO" id="qbH-cg-l2E">
+                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="400"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="qbH-cg-l2E" secondAttribute="trailing" id="0eO-xj-uai"/>
+                                                <constraint firstAttribute="bottom" secondItem="qbH-cg-l2E" secondAttribute="bottom" id="DnF-AM-cDI"/>
+                                                <constraint firstItem="qbH-cg-l2E" firstAttribute="leading" secondItem="O1I-Vf-bLt" secondAttribute="leading" id="Ong-BJ-45U"/>
+                                                <constraint firstItem="qbH-cg-l2E" firstAttribute="top" secondItem="O1I-Vf-bLt" secondAttribute="top" id="Y2d-TO-OX1"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="350" height="400"/>
+                                        <connections>
+                                            <outlet property="levelSelectionImage" destination="qbH-cg-l2E" id="E6d-zK-M2o"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="MTa-UQ-ICD" id="TNK-xO-2un"/>
+                                    <outlet property="delegate" destination="MTa-UQ-ICD" id="lp6-Vu-i4d"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PIj-OV-oHT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -548,6 +583,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="song1" width="349" height="549"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
