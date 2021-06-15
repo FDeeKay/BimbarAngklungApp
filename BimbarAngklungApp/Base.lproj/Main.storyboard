@@ -118,7 +118,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ES1-mR-Zyb">
-                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="itemSize" width="350" height="400"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -133,6 +133,10 @@
                                             <subviews>
                                                 <imageView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="song1" translatesAutoresizingMaskIntoConstraints="NO" id="qbH-cg-l2E">
                                                     <rect key="frame" x="0.0" y="0.0" width="350" height="400"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="BX9-gA-AB6" appends="YES" id="Tmd-u7-L7Y"/>
+                                                    </connections>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -150,7 +154,6 @@
                                 </cells>
                                 <connections>
                                     <outlet property="dataSource" destination="MTa-UQ-ICD" id="TNK-xO-2un"/>
-                                    <outlet property="delegate" destination="MTa-UQ-ICD" id="lp6-Vu-i4d"/>
                                 </connections>
                             </collectionView>
                         </subviews>
@@ -160,6 +163,11 @@
                     <navigationItem key="navigationItem" id="Llr-4e-l7M"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vx5-fX-GGK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="BX9-gA-AB6">
+                    <connections>
+                        <segue destination="ZzT-Tn-wl1" kind="show" id="3OB-ww-Rdd"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2400" y="-509.28725701943847"/>
         </scene>
@@ -269,10 +277,19 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pIZ-Fs-9EI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="dL1-il-20A" appends="YES" id="y4A-cP-glr"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="TCy-KZ-TLx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hzw-ow-kNv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="dL1-il-20A">
+                    <connections>
+                        <segue destination="OMk-KA-nHF" kind="show" id="tFV-ux-7pf"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3488" y="-509"/>
         </scene>
@@ -435,7 +452,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPJ-wV-L4x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5638" y="-509"/>
+            <point key="canvasLocation" x="5640" y="-509"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="O9I-be-lyL">
