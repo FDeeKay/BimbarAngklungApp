@@ -28,6 +28,8 @@
 		8FCCCCDA26788E8E009FAC16 /* LevelSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCCCCD926788E8E009FAC16 /* LevelSelectionViewController.swift */; };
 		8FCCCCDE2678C046009FAC16 /* LevelSelectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCCCCDD2678C046009FAC16 /* LevelSelectionViewCell.swift */; };
 		8FCCCCE02679F3D9009FAC16 /* LevelPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCCCCDF2679F3D9009FAC16 /* LevelPlayViewController.swift */; };
+		8FCCCCE4267B3FC0009FAC16 /* SelectSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCCCCE3267B3FC0009FAC16 /* SelectSongViewController.swift */; };
+		8FCCCCE6267B445B009FAC16 /* SongSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCCCCE5267B445B009FAC16 /* SongSelectionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		8FCCCCD926788E8E009FAC16 /* LevelSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectionViewController.swift; sourceTree = "<group>"; };
 		8FCCCCDD2678C046009FAC16 /* LevelSelectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectionViewCell.swift; sourceTree = "<group>"; };
 		8FCCCCDF2679F3D9009FAC16 /* LevelPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelPlayViewController.swift; sourceTree = "<group>"; };
+		8FCCCCE3267B3FC0009FAC16 /* SelectSongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSongViewController.swift; sourceTree = "<group>"; };
+		8FCCCCE5267B445B009FAC16 /* SongSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongSelectionTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 				8F26BD272677919800F020D7 /* AppDelegate.swift */,
 				8F26BD292677919800F020D7 /* SceneDelegate.swift */,
 				8F26BD2D2677919800F020D7 /* Main.storyboard */,
+				8FCCCCE3267B3FC0009FAC16 /* SelectSongViewController.swift */,
+				8FCCCCE5267B445B009FAC16 /* SongSelectionTableViewCell.swift */,
 				8F26BD2B2677919800F020D7 /* ViewController.swift */,
 				8FCCCCDD2678C046009FAC16 /* LevelSelectionViewCell.swift */,
 				8FCCCCDF2679F3D9009FAC16 /* LevelPlayViewController.swift */,
@@ -315,10 +321,12 @@
 			files = (
 				8FCCCCDA26788E8E009FAC16 /* LevelSelectionViewController.swift in Sources */,
 				8F26BD2C2677919800F020D7 /* ViewController.swift in Sources */,
+				8FCCCCE6267B445B009FAC16 /* SongSelectionTableViewCell.swift in Sources */,
 				8FCCCCB62677C788009FAC16 /* FreePlayViewController.swift in Sources */,
 				8FCCCCDE2678C046009FAC16 /* LevelSelectionViewCell.swift in Sources */,
 				8F26BD282677919800F020D7 /* AppDelegate.swift in Sources */,
 				8FCCCCE02679F3D9009FAC16 /* LevelPlayViewController.swift in Sources */,
+				8FCCCCE4267B3FC0009FAC16 /* SelectSongViewController.swift in Sources */,
 				8F26BD2A2677919800F020D7 /* SceneDelegate.swift in Sources */,
 				8F26BD322677919800F020D7 /* BimbarAngklungApp.xcdatamodeld in Sources */,
 			);

@@ -14,12 +14,12 @@ class LevelSelectionViewController: UIViewController, UICollectionViewDelegate, 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "cell2", for: indexPath)
             as! LevelSelectionViewCell
         
-        cell.levelSelectionImage.image = UIImage(named: levelSelectionImages[indexPath.row])
-        cell.levelSelectionImage.layer.cornerRadius = 50.0
-        return cell
+        cell2.levelSelectionImage.image = UIImage(named: levelSelectionImages[indexPath.row])
+        cell2.levelSelectionImage.layer.cornerRadius = 50.0
+        return cell2
     }
     
     
