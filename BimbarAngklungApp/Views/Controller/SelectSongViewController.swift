@@ -35,5 +35,9 @@ class SelectSongViewController: UIViewController, UITableViewDelegate, UITableVi
     
     var songSelectionImages:[String] = ["song1","song2","song3"]
 
-
+    // UNTUK BUAT LAGUNYA, DETAIL LAGUNYA, NANTI BISA KIRIM TITLE NYA KE PILIH NOT LALU KE PLAY SCREEN
+    var songList: [Song] = [
+        Song(title: "Yamko Rambe Yamko", duration: 120, arrNot: ["C","D","E","F"], arrDuration: [3,10,15,10], arrImage: ["imageC", "imageD"])
+        // title nama lagunya, duration panjang lagu, arrNot untuk kunci apa saja yang ada di lagu tersebut, arrDuration adalah berapa lama setiap kunci tersebut dimainkan sebelum pindah ke kunci berikutnya, arrImage untuk gambar hand gesture nya
+    ]
 }

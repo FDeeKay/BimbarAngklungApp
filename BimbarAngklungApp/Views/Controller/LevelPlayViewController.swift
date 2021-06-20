@@ -114,5 +114,10 @@ class LevelPlayViewController: UIViewController {
         suaraAngklung.play()
         
     }
-
+// setelah pilih not, dia cuma shake not itu aja
+//    if  (not == "C"){
+//    runAV(notfile: "C4.aiff")
+//    }else if (not == "D){
+//    runAV(notfile: "D4.aiff")
+    
 }
