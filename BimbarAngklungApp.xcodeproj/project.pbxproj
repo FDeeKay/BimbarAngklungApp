@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05F51A91267F8C6A0084EEA3 /* MPC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F51A90267F8C6A0084EEA3 /* MPC.storyboard */; };
+		05F51A93267F8CD20084EEA3 /* MPCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F51A92267F8CD20084EEA3 /* MPCViewController.swift */; };
 		3F0F44EB267F2C1600C23FEA /* PlayNotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F44EA267F2C1600C23FEA /* PlayNotViewController.swift */; };
 		8F26BD282677919800F020D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F26BD272677919800F020D7 /* AppDelegate.swift */; };
 		8F26BD2A2677919800F020D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F26BD292677919800F020D7 /* SceneDelegate.swift */; };
@@ -51,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05F51A90267F8C6A0084EEA3 /* MPC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MPC.storyboard; sourceTree = "<group>"; };
+		05F51A92267F8CD20084EEA3 /* MPCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCViewController.swift; sourceTree = "<group>"; };
 		3F0F44EA267F2C1600C23FEA /* PlayNotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayNotViewController.swift; sourceTree = "<group>"; };
 		8F26BD242677919800F020D7 /* BimbarAngklungApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BimbarAngklungApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F26BD272677919800F020D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +112,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05F51A8D267F8B830084EEA3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F26BD2D2677919800F020D7 /* Main.storyboard */,
+				05F51A90267F8C6A0084EEA3 /* MPC.storyboard */,
+				05F51A8F267F8C120084EEA3 /* Cell */,
+				05F51A8E267F8BE40084EEA3 /* Controller */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		05F51A8E267F8BE40084EEA3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8F26BD2B2677919800F020D7 /* ViewController.swift */,
+				8FCCCCE3267B3FC0009FAC16 /* SelectSongViewController.swift */,
+				3F0F44EA267F2C1600C23FEA /* PlayNotViewController.swift */,
+				8FCCCCDF2679F3D9009FAC16 /* LevelPlayViewController.swift */,
+				8FCCCCB52677C788009FAC16 /* FreePlayViewController.swift */,
+				8FCCCCD926788E8E009FAC16 /* LevelSelectionViewController.swift */,
+				05F51A92267F8CD20084EEA3 /* MPCViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		05F51A8F267F8C120084EEA3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8FCCCCE5267B445B009FAC16 /* SongSelectionTableViewCell.swift */,
+				8FCCCCDD2678C046009FAC16 /* LevelSelectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		8F26BD1B2677919800F020D7 = {
 			isa = PBXGroup;
 			children = (
@@ -132,17 +170,9 @@
 		8F26BD262677919800F020D7 /* BimbarAngklungApp */ = {
 			isa = PBXGroup;
 			children = (
+				05F51A8D267F8B830084EEA3 /* Views */,
 				8F26BD272677919800F020D7 /* AppDelegate.swift */,
 				8F26BD292677919800F020D7 /* SceneDelegate.swift */,
-				8F26BD2D2677919800F020D7 /* Main.storyboard */,
-				8FCCCCE3267B3FC0009FAC16 /* SelectSongViewController.swift */,
-				8FCCCCE5267B445B009FAC16 /* SongSelectionTableViewCell.swift */,
-				3F0F44EA267F2C1600C23FEA /* PlayNotViewController.swift */,
-				8F26BD2B2677919800F020D7 /* ViewController.swift */,
-				8FCCCCDD2678C046009FAC16 /* LevelSelectionViewCell.swift */,
-				8FCCCCDF2679F3D9009FAC16 /* LevelPlayViewController.swift */,
-				8FCCCCB52677C788009FAC16 /* FreePlayViewController.swift */,
-				8FCCCCD926788E8E009FAC16 /* LevelSelectionViewController.swift */,
 				8F26BD332677919900F020D7 /* Assets.xcassets */,
 				8F26BD352677919900F020D7 /* LaunchScreen.storyboard */,
 				8F26BD382677919900F020D7 /* Info.plist */,
@@ -288,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FCCCCD82677D824009FAC16 /* B4.aiff in Resources */,
+				05F51A91267F8C6A0084EEA3 /* MPC.storyboard in Resources */,
 				8FCCCCD32677D824009FAC16 /* E4.aiff in Resources */,
 				8F26BD372677919900F020D7 /* LaunchScreen.storyboard in Resources */,
 				8FCCCCD52677D824009FAC16 /* C4.aiff in Resources */,
@@ -327,6 +358,7 @@
 				8FCCCCE6267B445B009FAC16 /* SongSelectionTableViewCell.swift in Sources */,
 				8FCCCCB62677C788009FAC16 /* FreePlayViewController.swift in Sources */,
 				8FCCCCDE2678C046009FAC16 /* LevelSelectionViewCell.swift in Sources */,
+				05F51A93267F8CD20084EEA3 /* MPCViewController.swift in Sources */,
 				8F26BD282677919800F020D7 /* AppDelegate.swift in Sources */,
 				8FCCCCE02679F3D9009FAC16 /* LevelPlayViewController.swift in Sources */,
 				8FCCCCE4267B3FC0009FAC16 /* SelectSongViewController.swift in Sources */,

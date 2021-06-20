@@ -18,5 +18,10 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var mainImage: UIImageView!
     
+    @IBAction func songsButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "MPC", bundle: nil);
+        let viewController = storyboard.instantiateViewController(withIdentifier: "MPCBoard") as! MPCViewController;
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 }
 
