@@ -488,7 +488,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hzw-ow-kNv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="dL1-il-20A">
                     <connections>
-                        <segue destination="OMk-KA-nHF" kind="show" id="5Jm-IN-T9M"/>
+                        <action selector="tapPlayNotViewController:" destination="ZzT-Tn-wl1" id="0ef-dE-7EO"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -497,9 +497,9 @@
         <!--Level Play View Controller-->
         <scene sceneID="Nc9-Dt-72p">
             <objects>
-                <viewController id="OMk-KA-nHF" customClass="LevelPlayViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LevelPlay" id="OMk-KA-nHF" customClass="LevelPlayViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UtU-Qm-0Lt">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jve-4r-N2c">
@@ -617,6 +617,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t7p-50-NZg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="czM-hD-ViI" appends="YES" id="Qha-lf-xPd"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="YO6-LY-xBb"/>
                     <connections>
@@ -624,13 +628,18 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3sq-HL-HTb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="czM-hD-ViI">
+                    <connections>
+                        <action selector="tapLevelPlayViewController:" destination="OMk-KA-nHF" id="DnE-V4-g19"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4593.9252336448599" y="-509.28725701943847"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="UIZ-s8-4NG">
             <objects>
-                <viewController id="1El-6d-2rK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Congrats" id="1El-6d-2rK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UYK-rl-7qe">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -677,6 +686,7 @@
                         <viewLayoutGuide key="safeArea" id="xmi-s8-COw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="WuC-87-H5y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPJ-wV-L4x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

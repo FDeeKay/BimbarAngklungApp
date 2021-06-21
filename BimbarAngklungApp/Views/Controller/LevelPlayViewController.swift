@@ -114,6 +114,15 @@ class LevelPlayViewController: UIViewController {
         suaraAngklung.play()
         
     }
+    
+    
+    @IBAction func tapLevelPlayViewController(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil);
+        let viewController = storyboard.instantiateViewController(withIdentifier: "Congrats")
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    
 // setelah pilih not, dia cuma shake not itu aja
 //    if  (not == "C"){
 //    runAV(notfile: "C4.aiff")

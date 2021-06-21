@@ -111,6 +111,17 @@ class PickNotViewController: UIViewController {
         Not3btn.backgroundColor = UIColor.systemBlue
         Not5btn.backgroundColor = UIColor.systemBlue
     }
+    
+    
+    @IBAction func tapPlayNotViewController(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil);
+        let viewController = storyboard.instantiateViewController(withIdentifier: "LevelPlay")
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
