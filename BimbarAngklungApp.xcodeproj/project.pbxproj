@@ -20,6 +20,7 @@
 		8F26BD372677919900F020D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F26BD352677919900F020D7 /* LaunchScreen.storyboard */; };
 		8F26BD422677919900F020D7 /* BimbarAngklungAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F26BD412677919900F020D7 /* BimbarAngklungAppTests.swift */; };
 		8F26BD4D2677919900F020D7 /* BimbarAngklungAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F26BD4C2677919900F020D7 /* BimbarAngklungAppUITests.swift */; };
+		8FC1D9252680A629009A2FF5 /* SongInformationModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1D9242680A629009A2FF5 /* SongInformationModalViewController.swift */; };
 		8FCCCCB62677C788009FAC16 /* FreePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCCCCB52677C788009FAC16 /* FreePlayViewController.swift */; };
 		8FCCCCD12677D824009FAC16 /* C5.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8FCCCCC92677D824009FAC16 /* C5.aiff */; };
 		8FCCCCD22677D824009FAC16 /* F4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8FCCCCCA2677D824009FAC16 /* F4.aiff */; };
@@ -73,6 +74,7 @@
 		8F26BD482677919900F020D7 /* BimbarAngklungAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BimbarAngklungAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F26BD4C2677919900F020D7 /* BimbarAngklungAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BimbarAngklungAppUITests.swift; sourceTree = "<group>"; };
 		8F26BD4E2677919900F020D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FC1D9242680A629009A2FF5 /* SongInformationModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongInformationModalViewController.swift; sourceTree = "<group>"; };
 		8FCCCCB52677C788009FAC16 /* FreePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreePlayViewController.swift; sourceTree = "<group>"; };
 		8FCCCCC92677D824009FAC16 /* C5.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = C5.aiff; sourceTree = "<group>"; };
 		8FCCCCCA2677D824009FAC16 /* F4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = F4.aiff; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				8FCCCCB52677C788009FAC16 /* FreePlayViewController.swift */,
 				8FCCCCD926788E8E009FAC16 /* LevelSelectionViewController.swift */,
 				05F51A92267F8CD20084EEA3 /* MPCViewController.swift */,
+				8FC1D9242680A629009A2FF5 /* SongInformationModalViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				8FCCCCE02679F3D9009FAC16 /* LevelPlayViewController.swift in Sources */,
 				8FCCCCE4267B3FC0009FAC16 /* SelectSongViewController.swift in Sources */,
 				8F26BD2A2677919800F020D7 /* SceneDelegate.swift in Sources */,
+				8FC1D9252680A629009A2FF5 /* SongInformationModalViewController.swift in Sources */,
 				8F26BD322677919800F020D7 /* BimbarAngklungApp.xcdatamodeld in Sources */,
 				05F51A97267F9DE00084EEA3 /* Song.swift in Sources */,
 				3F0F44EB267F2C1600C23FEA /* PlayNotViewController.swift in Sources */,
