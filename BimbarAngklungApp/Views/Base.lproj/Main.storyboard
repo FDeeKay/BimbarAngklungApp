@@ -235,7 +235,7 @@
                                                     <color key="tintColor" systemColor="labelColor"/>
                                                     <state key="normal" title="Play"/>
                                                     <connections>
-                                                        <segue destination="ZzT-Tn-wl1" kind="show" id="xct-Bj-faa"/>
+                                                        <segue destination="ZzT-Tn-wl1" kind="show" id="H5k-fC-ZqB"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -488,7 +488,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hzw-ow-kNv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="dL1-il-20A">
                     <connections>
-                        <segue destination="OMk-KA-nHF" kind="show" id="tFV-ux-7pf"/>
+                        <segue destination="OMk-KA-nHF" kind="show" id="5Jm-IN-T9M"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
