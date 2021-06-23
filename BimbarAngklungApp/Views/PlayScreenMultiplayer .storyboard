@@ -363,6 +363,7 @@
                     <navigationItem key="navigationItem" id="O7d-Ys-e4T"/>
                     <connections>
                         <outlet property="Labelnot2" destination="mQd-7t-A0j" id="ds0-Sj-wo9"/>
+                        <outlet property="NextButton" destination="9lZ-nR-jdb" id="y93-AX-Zcp"/>
                         <outlet property="Not1btn" destination="Vdn-UZ-W9X" id="Ei1-oy-rFR"/>
                         <outlet property="Not1hibtn" destination="gUM-8q-5Fj" id="iBB-Es-agD"/>
                         <outlet property="Not2btn" destination="OPV-ie-Qp5" id="uvP-T1-0IJ"/>

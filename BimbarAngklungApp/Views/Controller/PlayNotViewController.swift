@@ -20,6 +20,7 @@ class PickNotViewController: UIViewController {
     @IBOutlet weak var Not6btn: UIButton!
     @IBOutlet weak var Not7btn: UIButton!
     @IBOutlet weak var Not1hibtn: UIButton!
+    @IBOutlet weak var NextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +41,15 @@ class PickNotViewController: UIViewController {
         Not6btn.setTitleColor(UIColor.black, for: .normal)
         Not7btn.setTitleColor(UIColor.black, for: .normal)
         Not1hibtn.setTitleColor(UIColor.black, for: .normal)
+        Not1btn.layer.cornerRadius = 20
+        Not2btn.layer.cornerRadius = 20
+        Not3btn.layer.cornerRadius = 20
+        Not4btn.layer.cornerRadius = 20
+        Not5btn.layer.cornerRadius = 20
+        Not6btn.layer.cornerRadius = 20
+        Not7btn.layer.cornerRadius = 20
+        Not1hibtn.layer.cornerRadius = 20
+        NextButton.layer.cornerRadius = 20
         
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
