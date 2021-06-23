@@ -23,6 +23,7 @@ class SelectSongViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     
+    @IBOutlet weak var imageCell: SongSelectionTableViewCell!
     
     
     @IBAction func playButton(_ sender: Any) {

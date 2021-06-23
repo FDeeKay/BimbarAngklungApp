@@ -111,7 +111,7 @@
             <objects>
                 <viewController id="Coe-jf-y8d" customClass="SongInformationModalViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eqb-Ui-0xq">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hzx-UK-Rzp">
@@ -254,6 +254,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="songSelectionImage" destination="jZc-4H-S4v" id="kBv-B2-x0m"/>
+                                            <segue destination="Coe-jf-y8d" kind="presentation" id="jhr-Xi-B6J"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -264,6 +265,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="07U-WI-Wgh"/>
                     <connections>
+                        <outlet property="imageCell" destination="EB1-Tk-FU3" id="heF-nT-DO0"/>
                         <outlet property="selectSongTable" destination="eHj-xs-CX8" id="gdv-VD-a4p"/>
                     </connections>
                 </viewController>
