@@ -241,7 +241,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKM-Qn-hnf">
-                                                    <rect key="frame" x="290" y="347" width="65" height="30"/>
+                                                    <rect key="frame" x="286" y="359" width="65" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <color key="tintColor" systemColor="labelColor"/>
@@ -265,7 +265,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="07U-WI-Wgh"/>
                     <connections>
-                        <outlet property="imageCell" destination="EB1-Tk-FU3" id="heF-nT-DO0"/>
                         <outlet property="selectSongTable" destination="eHj-xs-CX8" id="gdv-VD-a4p"/>
                     </connections>
                 </viewController>
