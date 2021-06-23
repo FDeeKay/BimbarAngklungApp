@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		05019B1326810B53009D2B7C /* Opening.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05019B1226810B53009D2B7C /* Opening.storyboard */; };
+		0517768D26832A0600C895A8 /* Congratulations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0517768C26832A0600C895A8 /* Congratulations.storyboard */; };
 		055C9AA6268312AE00BC66A2 /* PlayScreenMultiplayer .storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055C9AA5268312AE00BC66A2 /* PlayScreenMultiplayer .storyboard */; };
 		055C9AA8268313D200BC66A2 /* CongratulationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C9AA7268313D200BC66A2 /* CongratulationsViewController.swift */; };
 		055C9AAA2683144000BC66A2 /* NotSelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C9AA92683144000BC66A2 /* NotSelectedViewController.swift */; };
@@ -66,6 +67,7 @@
 
 /* Begin PBXFileReference section */
 		05019B1226810B53009D2B7C /* Opening.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Opening.storyboard; sourceTree = "<group>"; };
+		0517768C26832A0600C895A8 /* Congratulations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Congratulations.storyboard; sourceTree = "<group>"; };
 		055C9AA5268312AE00BC66A2 /* PlayScreenMultiplayer .storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "PlayScreenMultiplayer .storyboard"; sourceTree = "<group>"; };
 		055C9AA7268313D200BC66A2 /* CongratulationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsViewController.swift; sourceTree = "<group>"; };
 		055C9AA92683144000BC66A2 /* NotSelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSelectedViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				8F26BD352677919900F020D7 /* LaunchScreen.storyboard */,
 				055C9AAF2683160C00BC66A2 /* PlayScreenSinglePlayer.storyboard */,
 				055C9AAB2683149A00BC66A2 /* Badges.storyboard */,
+				0517768C26832A0600C895A8 /* Congratulations.storyboard */,
 				05F51A8F267F8C120084EEA3 /* Cell */,
 				05F51A8E267F8BE40084EEA3 /* Controller */,
 			);
@@ -373,6 +376,7 @@
 				8FCCCCD62677D824009FAC16 /* D4.aiff in Resources */,
 				8FCCCCD72677D824009FAC16 /* G4.aiff in Resources */,
 				8F26BD342677919900F020D7 /* Assets.xcassets in Resources */,
+				0517768D26832A0600C895A8 /* Congratulations.storyboard in Resources */,
 				8F26BD2F2677919800F020D7 /* Main.storyboard in Resources */,
 				8FCCCCD22677D824009FAC16 /* F4.aiff in Resources */,
 				8FCCCCD12677D824009FAC16 /* C5.aiff in Resources */,
