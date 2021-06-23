@@ -13,6 +13,8 @@
 		055C9AAA2683144000BC66A2 /* NotSelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C9AA92683144000BC66A2 /* NotSelectedViewController.swift */; };
 		055C9AAC2683149A00BC66A2 /* Badges.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055C9AAB2683149A00BC66A2 /* Badges.storyboard */; };
 		055C9AAE268314B500BC66A2 /* BadgesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C9AAD268314B500BC66A2 /* BadgesViewController.swift */; };
+		055C9AB02683160C00BC66A2 /* PlayScreenSinglePlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055C9AAF2683160C00BC66A2 /* PlayScreenSinglePlayer.storyboard */; };
+		055C9AB22683164100BC66A2 /* SinglePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C9AB12683164100BC66A2 /* SinglePlayViewController.swift */; };
 		055D0A622682D5BF00917872 /* ChoosePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055D0A612682D5BF00917872 /* ChoosePlayerViewController.swift */; };
 		05F51A91267F8C6A0084EEA3 /* MPC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F51A90267F8C6A0084EEA3 /* MPC.storyboard */; };
 		05F51A93267F8CD20084EEA3 /* MPCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F51A92267F8CD20084EEA3 /* MPCViewController.swift */; };
@@ -69,6 +71,8 @@
 		055C9AA92683144000BC66A2 /* NotSelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSelectedViewController.swift; sourceTree = "<group>"; };
 		055C9AAB2683149A00BC66A2 /* Badges.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Badges.storyboard; sourceTree = "<group>"; };
 		055C9AAD268314B500BC66A2 /* BadgesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgesViewController.swift; sourceTree = "<group>"; };
+		055C9AAF2683160C00BC66A2 /* PlayScreenSinglePlayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayScreenSinglePlayer.storyboard; sourceTree = "<group>"; };
+		055C9AB12683164100BC66A2 /* SinglePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayViewController.swift; sourceTree = "<group>"; };
 		055D0A612682D5BF00917872 /* ChoosePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePlayerViewController.swift; sourceTree = "<group>"; };
 		05F51A90267F8C6A0084EEA3 /* MPC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MPC.storyboard; sourceTree = "<group>"; };
 		05F51A92267F8CD20084EEA3 /* MPCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 				05019B1226810B53009D2B7C /* Opening.storyboard */,
 				055C9AA5268312AE00BC66A2 /* PlayScreenMultiplayer .storyboard */,
 				8F26BD352677919900F020D7 /* LaunchScreen.storyboard */,
+				055C9AAF2683160C00BC66A2 /* PlayScreenSinglePlayer.storyboard */,
 				055C9AAB2683149A00BC66A2 /* Badges.storyboard */,
 				05F51A8F267F8C120084EEA3 /* Cell */,
 				05F51A8E267F8BE40084EEA3 /* Controller */,
@@ -159,6 +164,7 @@
 				8FCCCCD926788E8E009FAC16 /* LevelSelectionViewController.swift */,
 				055C9AA92683144000BC66A2 /* NotSelectedViewController.swift */,
 				05F51A92267F8CD20084EEA3 /* MPCViewController.swift */,
+				055C9AB12683164100BC66A2 /* SinglePlayViewController.swift */,
 				055C9AA7268313D200BC66A2 /* CongratulationsViewController.swift */,
 				8FC1D9242680A629009A2FF5 /* SongInformationModalViewController.swift */,
 				055D0A612682D5BF00917872 /* ChoosePlayerViewController.swift */,
@@ -362,6 +368,7 @@
 				8FCCCCD32677D824009FAC16 /* E4.aiff in Resources */,
 				8F26BD372677919900F020D7 /* LaunchScreen.storyboard in Resources */,
 				055C9AAC2683149A00BC66A2 /* Badges.storyboard in Resources */,
+				055C9AB02683160C00BC66A2 /* PlayScreenSinglePlayer.storyboard in Resources */,
 				8FCCCCD52677D824009FAC16 /* C4.aiff in Resources */,
 				8FCCCCD62677D824009FAC16 /* D4.aiff in Resources */,
 				8FCCCCD72677D824009FAC16 /* G4.aiff in Resources */,
@@ -406,6 +413,7 @@
 				8FCCCCE02679F3D9009FAC16 /* LevelPlayViewController.swift in Sources */,
 				8FCCCCE4267B3FC0009FAC16 /* SelectSongViewController.swift in Sources */,
 				8F26BD2A2677919800F020D7 /* SceneDelegate.swift in Sources */,
+				055C9AB22683164100BC66A2 /* SinglePlayViewController.swift in Sources */,
 				8FC1D9252680A629009A2FF5 /* SongInformationModalViewController.swift in Sources */,
 				055D0A622682D5BF00917872 /* ChoosePlayerViewController.swift in Sources */,
 				055C9AA8268313D200BC66A2 /* CongratulationsViewController.swift in Sources */,
