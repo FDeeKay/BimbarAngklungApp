@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        mainImage.image = UIImage(named: "AngklungTest")
+        mainImage.image = UIImage(named: "Main Screen - Free play")
         mainImage.isUserInteractionEnabled = true
         // Do any additional setup after loading the view.
     }
