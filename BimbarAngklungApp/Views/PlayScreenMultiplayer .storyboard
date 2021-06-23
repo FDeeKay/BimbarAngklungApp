@@ -21,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zif-CJ-arc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4521" y="-497"/>
+            <point key="canvasLocation" x="4458" y="-510"/>
         </scene>
         <!--Level Play View Controller-->
         <scene sceneID="jsq-ov-UY1">
