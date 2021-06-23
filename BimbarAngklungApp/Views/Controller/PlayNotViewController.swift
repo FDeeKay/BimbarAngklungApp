@@ -41,6 +41,10 @@ class PickNotViewController: UIViewController {
         Not7btn.setTitleColor(UIColor.black, for: .normal)
         Not1hibtn.setTitleColor(UIColor.black, for: .normal)
         
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        
         // Do any additional setup after loading the view.
     }
 

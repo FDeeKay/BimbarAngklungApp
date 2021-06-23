@@ -15,6 +15,10 @@ class FreePlayViewController: UIViewController {
         freePlayImage.image = UIImage(named: "AngklungTest")
         angklungNote = 0
         becomeFirstResponder()
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
         // Do any additional setup after loading the view.
     }
     

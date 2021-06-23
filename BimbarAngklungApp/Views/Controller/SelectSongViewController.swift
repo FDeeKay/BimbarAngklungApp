@@ -34,6 +34,10 @@ class SelectSongViewController: UIViewController, UITableViewDelegate, UITableVi
         super.viewDidLoad()
         selectSongTable.delegate = self
         selectSongTable.dataSource = self
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
 
         // Do any additional setup after loading the view.
     }
