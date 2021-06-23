@@ -13,6 +13,9 @@ class MPCViewController: UIViewController, MCSessionDelegate, MCBrowserViewContr
 
     @IBOutlet weak var numberLabel: UILabel!
     
+    @IBOutlet weak var hostButton: UIButton!
+    @IBOutlet weak var guestButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
     
     var number = 0
     
@@ -32,7 +35,12 @@ class MPCViewController: UIViewController, MCSessionDelegate, MCBrowserViewContr
         peerID = MCPeerID(displayName: UIDevice.current.name)
         mcSession = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .required)
         mcSession.delegate = self
+        
+        hostButton.layer.cornerRadius = 20
+        guestButton.layer.cornerRadius = 20
+        nextButton.layer.cornerRadius = 20
     }
+    
 
     //button actions
     @IBAction func hostButton(_ sender: Any) {

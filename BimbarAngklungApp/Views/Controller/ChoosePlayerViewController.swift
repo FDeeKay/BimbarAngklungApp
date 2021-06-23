@@ -22,8 +22,8 @@ class ChoosePlayerViewController: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         
-        multiplayerButton.layer.cornerRadius = 10
-        singleplayerButton.layer.cornerRadius = 10
+        multiplayerButton.layer.cornerRadius = 20
+        singleplayerButton.layer.cornerRadius = 20
     }
     
     @IBAction func multiplayerButtonTapped(_ sender: Any) {
@@ -39,7 +39,8 @@ class ChoosePlayerViewController: UIViewController {
             MPCViewController?.modalPresentationStyle = .fullScreen
         }
     }
-    //        // untuk buat image view jadi action button untuk multiplayerButton
+    
+// untuk buat image view jadi action button untuk multiplayerButton
 //        let multiplayerTap = UITapGestureRecognizer(target: self, action: #selector(self.multiplayerTapped))
 //        multiplayerButton.addGestureRecognizer(multiplayerTap)
 //        multiplayerButton.isUserInteractionEnabled = true
