@@ -477,7 +477,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="TCy-KZ-TLx"/>
                     <connections>
-                        <outlet property="Labelnot2" destination="tSJ-AF-bew" id="tjc-0j-dgo"/>
+                        <outlet property="Labelnot2" destination="tSJ-AF-bew" id="5Dq-im-mAB"/>
                         <outlet property="Not1btn" destination="zEg-8B-WcF" id="86j-Wp-Hf5"/>
                         <outlet property="Not1hibtn" destination="fzy-v2-CsZ" id="Ajj-Xp-ewc"/>
                         <outlet property="Not2btn" destination="Ms2-gH-GV0" id="jvU-vj-kce"/>
