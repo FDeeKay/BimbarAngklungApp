@@ -22,8 +22,11 @@ class SelectSongViewController: UIViewController, UITableViewDelegate, UITableVi
 
     }
     
+    
+    
+    
     @IBAction func playButton(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil);
+        let storyboard = UIStoryboard(name: "PlayScreenMultiplayer ", bundle: nil);
         let viewController = storyboard.instantiateViewController(withIdentifier: "PickNot")
         self.navigationController?.pushViewController(viewController, animated: true)
     }

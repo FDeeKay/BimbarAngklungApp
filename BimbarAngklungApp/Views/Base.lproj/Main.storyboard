@@ -111,7 +111,7 @@
             <objects>
                 <viewController id="Coe-jf-y8d" customClass="SongInformationModalViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eqb-Ui-0xq">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hzx-UK-Rzp">
@@ -254,7 +254,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="songSelectionImage" destination="jZc-4H-S4v" id="kBv-B2-x0m"/>
-                                            <segue destination="Coe-jf-y8d" kind="presentation" id="gNU-Td-ZQp"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -482,6 +481,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="aiV-SY-GuQ"/>
                     <connections>
+                        <outlet property="buttonA4" destination="eXG-Tv-oVI" id="DTk-Mn-08S"/>
+                        <outlet property="buttonB4" destination="kzY-Ci-34F" id="Z4r-E5-ZeU"/>
+                        <outlet property="buttonC4" destination="LNT-HG-wg2" id="lsS-AI-qD1"/>
+                        <outlet property="buttonC5" destination="lXn-XW-svd" id="waI-P0-2dM"/>
+                        <outlet property="buttonD4" destination="O1c-ut-FPM" id="tY2-Y7-O2T"/>
+                        <outlet property="buttonE4" destination="Tg8-sK-4CS" id="Vm2-G0-YdG"/>
+                        <outlet property="buttonF4" destination="312-xn-jru" id="9xv-a3-5aN"/>
+                        <outlet property="buttonG4" destination="lV1-99-ZVG" id="5MY-GR-fNV"/>
                         <outlet property="freePlayImage" destination="bUb-Jc-3g1" id="RAn-L4-LWV"/>
                     </connections>
                 </viewController>
