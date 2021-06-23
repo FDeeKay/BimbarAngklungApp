@@ -22,6 +22,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var mainImage: UIImageView!
     
+    
+    @IBAction func badgeButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Badges", bundle: nil);
+        let viewController = storyboard.instantiateViewController(withIdentifier: "Badges") as! BadgesViewController;
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
     @IBAction func songsButton(_ sender: Any) {
         performSegue(withIdentifier: "GoToChoosePlayer", sender: sender)
     }

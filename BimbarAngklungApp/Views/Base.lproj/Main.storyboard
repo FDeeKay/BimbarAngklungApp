@@ -82,6 +82,9 @@
                                 <state key="normal" title="Badges" image="Main Screen - Badges">
                                     <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="badgeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c8n-GM-2R1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
