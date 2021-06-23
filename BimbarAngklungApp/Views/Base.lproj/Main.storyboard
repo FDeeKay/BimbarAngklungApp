@@ -10,6 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--ChoosePlayer-->
+        <scene sceneID="KZS-mM-1Bq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MPC" referencedIdentifier="ChoosePlayer" id="emW-zd-omX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yS4-ue-2IU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fqE-7D-aYZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1662" y="403"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -84,6 +94,7 @@
                     <navigationItem key="navigationItem" id="tt8-WE-PFd"/>
                     <connections>
                         <outlet property="mainImage" destination="yNA-mE-HEp" id="HEG-0f-0np"/>
+                        <segue destination="emW-zd-omX" kind="show" identifier="GoToChoosePlayer" id="qWL-4k-tCy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -710,7 +721,7 @@
         <!--Free Play View Controller-->
         <scene sceneID="cvk-qE-zIJ">
             <objects>
-                <viewController id="1G2-06-JPp" customClass="FreePlayViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FreePlay" id="1G2-06-JPp" customClass="FreePlayViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dSn-aR-fGr">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

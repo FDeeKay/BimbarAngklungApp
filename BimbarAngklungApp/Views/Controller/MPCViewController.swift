@@ -52,6 +52,11 @@ class MPCViewController: UIViewController, MCSessionDelegate, MCBrowserViewContr
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
+    // untuk back ke previous screen
+    @IBAction func backToChoosePlayer(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     // send data to other users
     func sendData(data: String) {
         if mcSession.connectedPeers.count > 0 {

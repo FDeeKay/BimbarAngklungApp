@@ -8,12 +8,79 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Choose Player View Controller-->
+        <scene sceneID="6af-uK-yhR">
+            <objects>
+                <viewController storyboardIdentifier="ChoosePlayer" id="fIv-Bd-l0t" customClass="ChoosePlayerViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jr4-oK-yCm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FK8-Lg-bfh">
+                                <rect key="frame" x="157" y="433" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.15756720299999999" green="0.26307487489999998" blue="0.23921424150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Wsa-f0-auc"/>
+                                </constraints>
+                                <state key="normal" title="Single Player">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="singleplayerButtonTapped:" destination="fIv-Bd-l0t" eventType="touchUpInside" id="qIp-Yg-MqB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3t-SI-rO2">
+                                <rect key="frame" x="157" y="383" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.15756720299999999" green="0.26307487489999998" blue="0.23921424150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="YPi-p7-nGI"/>
+                                </constraints>
+                                <state key="normal" title="Multiplayer">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                    <color key="titleShadowColor" systemColor="secondarySystemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="multiplayerButtonTapped:" destination="fIv-Bd-l0t" eventType="touchUpInside" id="SNw-1U-ITm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Z8r-hz-sSC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="r3t-SI-rO2" firstAttribute="centerX" secondItem="Jr4-oK-yCm" secondAttribute="centerX" id="OQ8-ou-x43"/>
+                            <constraint firstItem="FK8-Lg-bfh" firstAttribute="centerX" secondItem="Jr4-oK-yCm" secondAttribute="centerX" id="RHZ-tT-vyH"/>
+                            <constraint firstItem="FK8-Lg-bfh" firstAttribute="top" secondItem="r3t-SI-rO2" secondAttribute="bottom" constant="20" id="hFC-bg-dZa"/>
+                            <constraint firstItem="FK8-Lg-bfh" firstAttribute="centerY" secondItem="Jr4-oK-yCm" secondAttribute="centerY" id="izq-pP-hD2"/>
+                            <constraint firstItem="r3t-SI-rO2" firstAttribute="centerY" secondItem="Jr4-oK-yCm" secondAttribute="centerY" constant="-50" id="taI-1P-c6o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="multiplayerButton" destination="r3t-SI-rO2" id="uIa-FK-c2c"/>
+                        <outlet property="singleplayerButton" destination="FK8-Lg-bfh" id="Aef-Rf-aey"/>
+                        <segue destination="lX3-Fu-EJk" kind="show" identifier="GoToMPC" id="qxB-Jv-FbE"/>
+                        <segue destination="aPe-i1-P9V" kind="show" identifier="GoToSelectSong" id="gHl-wz-OuH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2kM-Pw-GHE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-894" y="110"/>
+        </scene>
+        <!--SelectSong-->
+        <scene sceneID="7pm-Gu-Pws">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="SelectSong" id="aPe-i1-P9V" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ikr-VJ-XV5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dot-wK-RYG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-893" y="596"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="XXL-e9-RUJ">
             <objects>
                 <viewController storyboardIdentifier="MPCBoard" id="lX3-Fu-EJk" customClass="MPCViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0ed-Lh-6iF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gaa-Jh-n0B">
@@ -55,10 +122,19 @@
                                     <action selector="nextButton:" destination="lX3-Fu-EJk" eventType="touchUpInside" id="NjE-Jj-KtA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8f-UC-Z3Q">
+                                <rect key="frame" x="26" y="20" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backToChoosePlayer:" destination="lX3-Fu-EJk" eventType="touchUpInside" id="PRP-Pj-RNP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kaE-8S-IdQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="26Z-il-TmK"/>
                     <connections>
                         <outlet property="numberLabel" destination="Gaa-Jh-n0B" id="iqD-Mi-yoA"/>
                     </connections>
@@ -69,6 +145,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
