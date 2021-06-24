@@ -81,7 +81,7 @@
         <!--Play View Controller-->
         <scene sceneID="3a4-pF-Imm">
             <objects>
-                <viewController id="8j6-X2-9yL" customClass="PlayViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlayScreen" id="8j6-X2-9yL" customClass="PlayViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hc6-lH-3dj">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -176,6 +176,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0m-Cf-cqa">
+                                <rect key="frame" x="291" y="155" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="testButton:" destination="8j6-X2-9yL" eventType="touchUpInside" id="Alw-dv-Dm5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JgC-9c-wVY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

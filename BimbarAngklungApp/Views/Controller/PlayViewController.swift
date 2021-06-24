@@ -102,6 +102,14 @@ class PlayViewController: UIViewController {
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
             suaraAngklung.play()
     }
+    
+    @IBAction func testButton(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Congratulations", bundle: nil);
+        let viewController = storyboard.instantiateViewController(withIdentifier: "Congrats") as! CongratulationsViewController;
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
