@@ -18,7 +18,7 @@ class NotSelectedViewController: UIViewController {
         super.viewDidLoad()
         
         youGotText.text = ""
-        youGotText.text = "You Got \(youGotKey)!"
+        youGotText.text = "You Chose \(youGotKey)!"
         
         switch youGotKey {
         case "C":
