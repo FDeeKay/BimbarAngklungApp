@@ -35,9 +35,6 @@
                                 <state key="normal" image="Congrats Screen_play again">
                                     <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
                                 </state>
-                                <connections>
-                                    <action selector="playAgain:" destination="Ehj-JL-2fU" eventType="touchUpInside" id="ONl-P7-F3R"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rO3-1Z-oeD">
                                 <rect key="frame" x="38" y="597" width="147" height="40"/>
@@ -47,9 +44,6 @@
                                 <state key="normal" image="Congrats Screen_pick other songs">
                                     <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
                                 </state>
-                                <connections>
-                                    <action selector="pickOtherSong:" destination="Ehj-JL-2fU" eventType="touchUpInside" id="W4A-IB-9U9"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxc-PM-hCe">
                                 <rect key="frame" x="206" y="597" width="147" height="40"/>
