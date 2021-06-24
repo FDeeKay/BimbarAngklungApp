@@ -24,7 +24,7 @@ class SelectSongViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.kotakDalamCell.layer.cornerRadius = 10
         cell.layer.cornerRadius = 10
         cell.playTombol.layer.cornerRadius = 10
-        cell.playTombol.layer.borderWidth = 1
+        cell.playTombol.layer.borderWidth = 2
         cell.songSelectionImage.layer.cornerRadius = 10
         
         
