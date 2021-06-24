@@ -22,6 +22,7 @@
 		05F51A97267F9DE00084EEA3 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F51A96267F9DE00084EEA3 /* Song.swift */; };
 		3F0F44EB267F2C1600C23FEA /* PlayNotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F44EA267F2C1600C23FEA /* PlayNotViewController.swift */; };
 		3F10AD882682EB4600B23403 /* gifLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F10AD872682EB4600B23403 /* gifLoader.swift */; };
+		3F1223BF26845F05001C437C /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1223BE26845F05001C437C /* PlayViewController.swift */; };
 		8F26BD282677919800F020D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F26BD272677919800F020D7 /* AppDelegate.swift */; };
 		8F26BD2A2677919800F020D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F26BD292677919800F020D7 /* SceneDelegate.swift */; };
 		8F26BD2C2677919800F020D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F26BD2B2677919800F020D7 /* ViewController.swift */; };
@@ -81,6 +82,7 @@
 		05F51A96267F9DE00084EEA3 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		3F0F44EA267F2C1600C23FEA /* PlayNotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayNotViewController.swift; sourceTree = "<group>"; };
 		3F10AD872682EB4600B23403 /* gifLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gifLoader.swift; sourceTree = "<group>"; };
+		3F1223BE26845F05001C437C /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		8F26BD242677919800F020D7 /* BimbarAngklungApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BimbarAngklungApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F26BD272677919800F020D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F26BD292677919800F020D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				05F51A90267F8C6A0084EEA3 /* MPC.storyboard */,
 				05019B1226810B53009D2B7C /* Opening.storyboard */,
 				055C9AA5268312AE00BC66A2 /* PlayScreenMultiplayer .storyboard */,
+				3F1223BE26845F05001C437C /* PlayViewController.swift */,
 				8F26BD352677919900F020D7 /* LaunchScreen.storyboard */,
 				055C9AAF2683160C00BC66A2 /* PlayScreenSinglePlayer.storyboard */,
 				055C9AAB2683149A00BC66A2 /* Badges.storyboard */,
@@ -424,6 +427,7 @@
 				8F26BD322677919800F020D7 /* BimbarAngklungApp.xcdatamodeld in Sources */,
 				055C9AAE268314B500BC66A2 /* BadgesViewController.swift in Sources */,
 				05F51A97267F9DE00084EEA3 /* Song.swift in Sources */,
+				3F1223BF26845F05001C437C /* PlayViewController.swift in Sources */,
 				3F0F44EB267F2C1600C23FEA /* PlayNotViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
