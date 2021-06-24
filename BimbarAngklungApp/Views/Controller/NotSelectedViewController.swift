@@ -58,13 +58,14 @@ class NotSelectedViewController: UIViewController {
     }
     
     @IBAction func nextButtonTapped(_ sender: Any) {
-        performSegue(withIdentifier: "GoToLevelPlay", sender: sender)
+        performSegue(withIdentifier: "goToPlay", sender: sender)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "GoToLevelPlay" {
-            let LevelPlayViewController = segue.destination as? LevelPlayViewController
-            LevelPlayViewController?.modalPresentationStyle = .fullScreen
+        if segue.identifier == "goToPlay" {
+            let playViewController = segue.destination as? PlayViewController
+            playViewController?.myNot = youGotKey
+            playViewController?.modalPresentationStyle = .fullScreen
         }
     }
 
