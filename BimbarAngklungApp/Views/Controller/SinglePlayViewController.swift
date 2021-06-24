@@ -15,7 +15,8 @@ class SinglePlayViewController: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
-
+//        override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+//            angklungSound.play()}
         // Do any additional setup after loading the view.
     }
     
