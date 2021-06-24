@@ -19,8 +19,18 @@ class BadgesViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+    @IBOutlet weak var badges2: UIImageView!
+   
 
+    @IBOutlet weak var badges3: UIImageView!
+    
+    
+    @IBOutlet weak var badges4: UIImageView!
+    
+    
+    @IBOutlet weak var badges5: UIImageView!
+    
+    
     /*
     // MARK: - Navigation
 
