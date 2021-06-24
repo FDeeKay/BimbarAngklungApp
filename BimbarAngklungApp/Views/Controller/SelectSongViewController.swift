@@ -21,8 +21,11 @@ class SelectSongViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.pembuatLagu.text = pembuat2Lagu[indexPath.row]
         cell.deskripsiLagu.text = deskripsi2Lagu[indexPath.row]
         cell.genreLagu.text = genre2Lagu[indexPath.row]
-        cell.layer.borderWidth = 1
+        cell.kotakDalamCell.layer.cornerRadius = 10
         cell.layer.cornerRadius = 10
+        cell.playTombol.layer.cornerRadius = 10
+        cell.playTombol.layer.borderWidth = 1
+        cell.songSelectionImage.layer.cornerRadius = 10
         
         
                 
@@ -32,8 +35,6 @@ class SelectSongViewController: UIViewController, UITableViewDelegate, UITableVi
     
     
     @IBOutlet weak var imageCell: SongSelectionTableViewCell!
-    
-
     
     
     
@@ -74,7 +75,7 @@ class SelectSongViewController: UIViewController, UITableViewDelegate, UITableVi
     
     var pembuat2Lagu:[String] = ["Lorem", "Ipsum", "Ismail Marzuki"]
     
-    var deskripsi2Lagu:[String] = ["Yamko Rame Yamko adalah lagu tradisional papua", "Suwe ora jamu adalah lagu tradisional yang berasal dari Jawa Barat", "Halo halo bandung adalah lagu nasional"]
+    var deskripsi2Lagu:[String] = ["Yamko Rambe Yamko adalah lagu tradisional papua lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum", "Suwe ora jamu adalah lagu tradisional yang berasal dari Jawa Barat", "Halo halo bandung adalah lagu nasional"]
     
     var genre2Lagu:[String] = ["Lagu Daerah", "Lagu Daerah", "Lagu Nasional"]
 }

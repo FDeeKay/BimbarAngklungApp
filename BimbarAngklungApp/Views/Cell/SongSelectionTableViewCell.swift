@@ -23,9 +23,16 @@ class SongSelectionTableViewCell: UITableViewCell {
     @IBOutlet weak var songSelectionImage: UIImageView!
     
     @IBOutlet weak var namaLagu: UILabel!
+
     @IBOutlet weak var pembuatLagu: UILabel!
+    
     @IBOutlet weak var deskripsiLagu: UILabel!
     @IBOutlet weak var genreLagu: UILabel!
+    
+    @IBOutlet weak var kotakDalamCell: UIView!
+
+    @IBOutlet weak var playTombol: UIButton!
+    
     
     
 }
