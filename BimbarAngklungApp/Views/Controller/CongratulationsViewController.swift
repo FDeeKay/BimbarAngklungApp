@@ -19,6 +19,24 @@ class CongratulationsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func backToMainScreen(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
+    @IBAction func pickOtherSong(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil);
+        let viewController = storyboard.instantiateViewController(withIdentifier: "SelectSong") as! BadgesViewController;
+        self.navigationController?.popToViewController(viewController, animated: true)
+    }
+    
+    @IBAction func playAgain(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "PlayScreenMultiplayer ", bundle: nil);
+        let viewController = storyboard.instantiateViewController(withIdentifier: "PlayScreen") as! BadgesViewController;
+        self.navigationController?.popToViewController(viewController, animated: true)
+    }
+    
+    
 
     /*
     // MARK: - Navigation
