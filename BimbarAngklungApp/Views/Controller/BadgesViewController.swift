@@ -9,6 +9,7 @@ import UIKit
 
 class BadgesViewController: UIViewController {
 
+    @IBOutlet weak var badges1: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
