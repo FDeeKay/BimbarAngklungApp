@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="L1E-fG-Gjj" customClass="NotSelectedViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lDM-Xc-i9K">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Multiple Screen" translatesAutoresizingMaskIntoConstraints="NO" id="Xw6-N7-QNN">
@@ -27,18 +27,14 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="L1E-fG-Gjj" eventType="touchUpInside" id="bd8-59-qtP"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle" translatesAutoresizingMaskIntoConstraints="NO" id="N1X-Ml-M7K">
                                 <rect key="frame" x="80" y="307" width="230" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You got G!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Td-pw-wih">
-                                <rect key="frame" x="106" y="184" width="178" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="shake your phone " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klh-ci-u3M">
                                 <rect key="frame" x="125" y="652" width="140" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -46,15 +42,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You got G!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cl8-Hr-Feq">
-                                <rect key="frame" x="106" y="184" width="178" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You got G!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7Z-iU-4A4">
-                                <rect key="frame" x="107" y="183" width="178" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You Got G" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7Z-iU-4A4">
+                                <rect key="frame" x="80" y="183" width="230" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="0.15686274509803921" green="0.2627450980392157" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
@@ -68,9 +57,13 @@
                         <viewLayoutGuide key="safeArea" id="rw6-pu-v2M"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Qzz-Qf-E4G"/>
                     <connections>
                         <outlet property="NextButton" destination="eWr-Cp-TZQ" id="yuJ-fK-QTx"/>
                         <outlet property="YouGotText" destination="D7Z-iU-4A4" id="uQG-Pj-ylU"/>
+                        <outlet property="imageHandSign" destination="t14-GP-9Mz" id="CmG-ny-Zkm"/>
+                        <outlet property="youGotText" destination="D7Z-iU-4A4" id="MYa-EV-DX7"/>
+                        <segue destination="ENN-CS-UCT" kind="show" identifier="GoToLevelPlay" id="PEH-88-wUC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zif-CJ-arc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -82,7 +75,7 @@
             <objects>
                 <viewController storyboardIdentifier="LevelPlay" id="ENN-CS-UCT" customClass="LevelPlayViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZcZ-zA-6Sq">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Song" translatesAutoresizingMaskIntoConstraints="NO" id="e40-Aw-7Wv">
@@ -361,6 +354,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="Ynp-yf-9Cr" eventType="touchUpInside" id="YNH-gT-KcU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdn-UZ-W9X">
                                 <rect key="frame" x="39" y="250" width="315" height="40"/>
@@ -394,6 +390,7 @@
                         <outlet property="Not5btn" destination="yob-jL-iUz" id="U09-3M-E62"/>
                         <outlet property="Not6btn" destination="Acb-vg-XQ1" id="Ezv-1p-aBh"/>
                         <outlet property="Not7btn" destination="4wT-AP-PLh" id="Hea-q9-p2I"/>
+                        <segue destination="L1E-fG-Gjj" kind="show" identifier="GoToNotSelected" id="8MG-jL-tsk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fB6-Wi-l6T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

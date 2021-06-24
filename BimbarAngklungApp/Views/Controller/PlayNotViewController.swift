@@ -9,8 +9,9 @@ import UIKit
 import AVFoundation
 
 class PickNotViewController: UIViewController {
-    var suaraAngklung = AVAudioPlayer()
     
+    var suaraAngklung = AVAudioPlayer()
+    var keyChosen : String = ""
     
     @IBOutlet weak var Not1btn: UIButton!
     @IBOutlet weak var Not2btn: UIButton!
@@ -65,17 +66,22 @@ class PickNotViewController: UIViewController {
         Not1btn.backgroundColor = UIColor.systemGreen
         do{
             suaraAngklung = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "C4", ofType: "aiff") ?? ""))
-            suaraAngklung.play()} catch {
+            suaraAngklung.play()
+            keyChosen = "C"
+        } catch {
             print("Error")
         }
     }
+    
     @IBAction func Not2Clickeed(_ sender: Any) {
         changeLabel2(text: "D pops up in the song")
         resetColorBtn()
         Not2btn.backgroundColor = UIColor.systemGreen
         do{
             suaraAngklung = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "D4", ofType: "aiff") ?? ""))
-            suaraAngklung.play()} catch {
+            suaraAngklung.play()
+            keyChosen = "D"
+        } catch {
             print("Error")
         }
     }
@@ -86,7 +92,9 @@ class PickNotViewController: UIViewController {
         Not3btn.backgroundColor = UIColor.systemGreen
         do{
             suaraAngklung = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "E4", ofType: "aiff") ?? ""))
-            suaraAngklung.play()} catch {
+            suaraAngklung.play()
+            keyChosen = "E"
+        } catch {
             print("Error")
         }
     }
@@ -97,7 +105,9 @@ class PickNotViewController: UIViewController {
         Not4btn.backgroundColor = UIColor.systemGreen
         do{
             suaraAngklung = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "F4", ofType: "aiff") ?? ""))
-            suaraAngklung.play()} catch {
+            suaraAngklung.play()
+            keyChosen = "F"
+        } catch {
             print("Error")
         }
     }
@@ -108,7 +118,9 @@ class PickNotViewController: UIViewController {
         Not5btn.backgroundColor = UIColor.systemGreen
         do{
             suaraAngklung = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "G4", ofType: "aiff") ?? ""))
-            suaraAngklung.play()} catch {
+            suaraAngklung.play()
+            keyChosen = "G"
+        } catch {
             print("Error")
         }
     }
@@ -119,7 +131,9 @@ class PickNotViewController: UIViewController {
         Not6btn.backgroundColor = UIColor.systemGreen
         do{
             suaraAngklung = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "A4", ofType: "aiff") ?? ""))
-            suaraAngklung.play()} catch {
+            suaraAngklung.play()
+            keyChosen = "A"
+        } catch {
             print("Error")
         }
     }
@@ -130,7 +144,9 @@ class PickNotViewController: UIViewController {
         Not7btn.backgroundColor = UIColor.systemGreen
         do{
             suaraAngklung = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "B4", ofType: "aiff") ?? ""))
-            suaraAngklung.play()} catch {
+            suaraAngklung.play()
+            keyChosen = "B"
+        } catch {
             print("Error")
         }
     }
@@ -141,7 +157,9 @@ class PickNotViewController: UIViewController {
         Not1hibtn.backgroundColor = UIColor.systemGreen
         do{
             suaraAngklung = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "C5", ofType: "aiff") ?? ""))
-            suaraAngklung.play()} catch {
+            suaraAngklung.play()
+            keyChosen = "C."
+        } catch {
             print("Error")
         }
     }
@@ -160,6 +178,9 @@ class PickNotViewController: UIViewController {
         Not1hibtn.backgroundColor = UIColor.white
     }
     
+    @IBAction func nextButtonTapped(_ sender: Any) {
+        performSegue(withIdentifier: "GoToNotSelected", sender: sender)
+    }
     
     @IBAction func tapPlayNotViewController(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil);
@@ -167,17 +188,13 @@ class PickNotViewController: UIViewController {
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
-    
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "GoToNotSelected" {
+            let NotSelectedViewController = segue.destination as? NotSelectedViewController
+            NotSelectedViewController?.modalPresentationStyle = .fullScreen
+            NotSelectedViewController?.youGotKey = keyChosen
+        }
     }
-    */
+    
 
 }
