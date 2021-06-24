@@ -320,7 +320,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="C."/>
+                                <state key="normal" title="C'"/>
                                 <connections>
                                     <action selector="Not1highClicked:" destination="Ynp-yf-9Cr" eventType="touchUpInside" id="DoG-Fm-cik"/>
                                 </connections>

@@ -41,6 +41,9 @@ class NotSelectedViewController: UIViewController {
             
         case "B":
             imageHandSign.image = UIImage(named: "7_B")
+        
+        case "C'":
+            imageHandSign.image = UIImage(named: "8_C'")
             
         default:
             print("gak milih key")

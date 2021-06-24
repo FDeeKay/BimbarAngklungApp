@@ -158,7 +158,7 @@ class PickNotViewController: UIViewController {
         do{
             suaraAngklung = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "C5", ofType: "aiff") ?? ""))
             suaraAngklung.play()
-            keyChosen = "C."
+            keyChosen = "C'"
         } catch {
             print("Error")
         }
