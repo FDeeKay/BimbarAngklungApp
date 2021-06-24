@@ -152,7 +152,7 @@ class PickNotViewController: UIViewController {
     }
     
     @IBAction func Not1highClicked(_ sender: Any) {
-        changeLabel2(text: "C. pops up in the song")
+        changeLabel2(text: "C' pops up in the song")
         resetColorBtn()
         Not1hibtn.backgroundColor = UIColor.systemGreen
         do{
