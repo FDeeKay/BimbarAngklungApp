@@ -11,7 +11,7 @@ import AVFoundation
 class NewPlayViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var partiturCollectionView: UICollectionView!
-    @IBOutlet weak var labelNot: UILabel!
+//    @IBOutlet weak var labelNot: UILabel!
     
     var myNot : String = ""
     
@@ -235,9 +235,17 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
         }
         
         if textKey[0] == ""{
-            let storyboard = UIStoryboard(name: "Congratulations", bundle: nil);
-            let viewController = storyboard.instantiateViewController(withIdentifier: "Congrats") as! CongratulationsViewController;
-            self.navigationController?.pushViewController(viewController, animated: true)
+            performSegue(withIdentifier: "GoToCongratulations", sender: self)
+//            let storyboard = UIStoryboard(name: "Congratulations", bundle: nil);
+//            let viewController = storyboard.instantiateViewController(withIdentifier: "Congrats") as! CongratulationsViewController;
+//            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "GoToCongratulations" {
+            let congratulationsViewController = segue.destination as? CongratulationsViewController
+            congratulationsViewController?.modalPresentationStyle = .fullScreen
         }
     }
 
@@ -255,13 +263,14 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
         buttonC5.setImage(UIImage(named: "Free Play - 8_C' (off)"), for: .normal)
     }
     
-    @IBAction func finishButton(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Congratulations", bundle: nil);
-        let viewController = storyboard.instantiateViewController(withIdentifier: "Congrats") as! CongratulationsViewController;
-        self.navigationController?.pushViewController(viewController, animated: true)
-    }
+//    @IBAction func finishButton(_ sender: Any) {
+//        let storyboard = UIStoryboard(name: "Congratulations", bundle: nil);
+//        let viewController = storyboard.instantiateViewController(withIdentifier: "Congrats") as! CongratulationsViewController;
+//        self.navigationController?.pushViewController(viewController, animated: true)
+//    }
     
 //        cell.setUI(key: "E", text: "Su")
         
 //        cell.labelKey.text = array[index.row].key
 }
+

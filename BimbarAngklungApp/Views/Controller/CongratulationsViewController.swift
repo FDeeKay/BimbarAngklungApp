@@ -25,25 +25,22 @@ class CongratulationsViewController: UIViewController {
     }
     
     @IBAction func pickOtherSong(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "PlayScreenMultiplayer ", bundle: nil);
-        let viewController = storyboard.instantiateViewController(withIdentifier: "NewPlayScreen") as! NewPlayViewController;
-        self.navigationController?.popToViewController(viewController, animated: true)
+        performSegue(withIdentifier: "GoToSelectSong", sender: sender)
     }
     
     
     @IBAction func playAgain(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        performSegue(withIdentifier: "GoToPlayScreen", sender: sender)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "GoToPlayScreen" {
+            let newPlayViewController = segue.destination as? NewPlayViewController
+            newPlayViewController?.modalPresentationStyle = .fullScreen
+        }else if segue.identifier == "GoToSelectSong" {
+                let selectSongViewController = segue.destination as? SelectSongViewController
+                selectSongViewController?.modalPresentationStyle = .fullScreen
+        }
     }
-    */
 
 }

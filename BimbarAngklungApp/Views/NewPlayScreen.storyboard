@@ -118,22 +118,6 @@
                                 <color key="textColor" red="0.15756720299999999" green="0.26307487489999998" blue="0.23921424150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vh-cR-QVl">
-                                <rect key="frame" x="313" y="140" width="42" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gyw-5L-vLG">
-                                <rect key="frame" x="313" y="96" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Finish"/>
-                                <connections>
-                                    <action selector="finishButton:" destination="sTn-y0-Nwb" eventType="touchUpInside" id="mmE-97-Rqb"/>
-                                </connections>
-                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tXd-xL-lLN">
                                 <rect key="frame" x="0.0" y="260" width="390" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -165,13 +149,23 @@
                         <outlet property="buttonF4" destination="1da-24-coQ" id="adH-qr-KHr"/>
                         <outlet property="buttonG4" destination="Zog-ru-goP" id="5d5-QB-wo3"/>
                         <outlet property="imageHandSign" destination="ed8-Xr-xby" id="ayn-6B-cUR"/>
-                        <outlet property="labelNot" destination="4Vh-cR-QVl" id="3Kb-yn-az6"/>
                         <outlet property="partiturCollectionView" destination="tXd-xL-lLN" id="3zM-Bt-sx3"/>
+                        <segue destination="2TN-ln-0Ru" kind="show" identifier="GoToCongratulations" id="uw4-eQ-KyS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q1K-pA-cNo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5427.6923076923076" y="-100.23696682464454"/>
+        </scene>
+        <!--Congrats-->
+        <scene sceneID="rw4-sT-6ih">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Congratulations" referencedIdentifier="Congrats" id="2TN-ln-0Ru" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="AMD-Ee-llG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8sQ-66-Agm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5428" y="337"/>
         </scene>
     </scenes>
     <resources>
@@ -186,9 +180,6 @@
         <image name="Free Play - 7_B (off)" width="165" height="165"/>
         <image name="Free Play - 8_C' (off)" width="165" height="174"/>
         <image name="Song" width="1125" height="2436"/>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
