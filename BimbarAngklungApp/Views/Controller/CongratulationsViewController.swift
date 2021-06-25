@@ -25,7 +25,9 @@ class CongratulationsViewController: UIViewController {
     }
     
     @IBAction func pickOtherSong(_ sender: Any) {
-        
+        let storyboard = UIStoryboard(name: "PlayScreenMultiplayer ", bundle: nil);
+        let viewController = storyboard.instantiateViewController(withIdentifier: "NewPlayScreen") as! NewPlayViewController;
+        self.navigationController?.popToViewController(viewController, animated: true)
     }
     
     
