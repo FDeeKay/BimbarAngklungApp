@@ -48,6 +48,15 @@ class FreePlayViewController: UIViewController {
         self.navigationController?.navigationBar.isTranslucent = true
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        stopGyros()
+        playSoundStop()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        stopGyros()
+        playSoundStop()
+    }
     //Key C
     @IBAction func noteC4(_ sender: Any) {
         angklungNote = 1
@@ -243,4 +252,8 @@ class FreePlayViewController: UIViewController {
         }
     }
     
+    func playSoundStop() {
+        angklungSound.stop()
+    }
 }
+
