@@ -44,7 +44,7 @@ class ChoosePlayerViewController: UIViewController {
         if segue.identifier == "GoToMPC" {
             let MPCViewController = segue.destination as? MPCViewController
             MPCViewController?.modalPresentationStyle = .fullScreen
-        } else if segue.identifier == "SelectSong" {
+        } else if segue.identifier == "GoToSelectSong" {
             let SelectSongViewController = segue.destination as? SelectSongViewController
             SelectSongViewController?.modalPresentationStyle = .fullScreen
             SelectSongViewController?.modeChosen = modeChosen
