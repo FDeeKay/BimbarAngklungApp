@@ -62,10 +62,10 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "partiturCell", for: indexPath) as! PartiturCollectionViewCell
         
         // kasih wanra urutan ke 0
-        if(indexPath.item==0){
-            cell.labelKey.textColor = .green
-            cell.labelText.textColor = .green
-        }
+      //  if(indexPath.item==0){
+      //      cell.labelKey.textColor = .green
+      //      cell.labelText.textColor = .green
+      //  }
         
         // manggil array di atas, datanya
         cell.labelKey.text = textKey[indexPath.row]
@@ -219,7 +219,12 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
         buttonC5.setImage(UIImage(named: "Free Play - 8_C' (off)"), for: .normal)
     }
     
-
+    @IBAction func finishButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Congratulations", bundle: nil);
+        let viewController = storyboard.instantiateViewController(withIdentifier: "Congrats") as! CongratulationsViewController;
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
 //        cell.setUI(key: "E", text: "Su")
         
 //        cell.labelKey.text = array[index.row].key

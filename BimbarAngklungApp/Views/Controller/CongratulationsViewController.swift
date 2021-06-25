@@ -24,8 +24,14 @@ class CongratulationsViewController: UIViewController {
         self.navigationController?.popToRootViewController(animated: true)
     }
     
+    @IBAction func pickOtherSong(_ sender: Any) {
+        
+    }
     
     
+    @IBAction func playAgain(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
 
     /*

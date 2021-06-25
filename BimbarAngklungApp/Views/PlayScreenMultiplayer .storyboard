@@ -505,6 +505,9 @@
                                 <rect key="frame" x="313" y="96" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Finish"/>
+                                <connections>
+                                    <action selector="finishButton:" destination="Qlo-aJ-0Wc" eventType="touchUpInside" id="l9Y-Pd-CFC"/>
+                                </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bt2-Wy-K8g">
                                 <rect key="frame" x="0.0" y="260" width="390" height="80"/>
