@@ -539,6 +539,7 @@
                         <outlet property="buttonE4" destination="U0r-kF-Pe9" id="JsQ-JZ-mcg"/>
                         <outlet property="buttonF4" destination="qnt-ch-Aax" id="Pk0-2Z-QWG"/>
                         <outlet property="buttonG4" destination="ICo-Hg-TZZ" id="fss-AH-heU"/>
+                        <outlet property="imageHandSign" destination="73k-Iv-wWm" id="JS8-aC-epT"/>
                         <outlet property="labelNot" destination="a3e-ec-onU" id="58O-VJ-pB7"/>
                         <outlet property="partiturCollectionView" destination="bt2-Wy-K8g" id="f3E-6h-uVB"/>
                     </connections>

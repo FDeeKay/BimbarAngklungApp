@@ -41,6 +41,7 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
     @IBOutlet weak var buttonA4: UIButton!
     @IBOutlet weak var buttonB4: UIButton!
     @IBOutlet weak var buttonC5: UIButton!
+    @IBOutlet weak var imageHandSign: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -202,6 +203,35 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
         textKey.removeFirst()
         textLyric.removeFirst()
         partiturCollectionView.reloadData()
+        }
+        
+        switch keyTapped {
+        case "C":
+            imageHandSign.image = UIImage(named: "1_C")
+
+        case "D":
+            imageHandSign.image = UIImage(named: "2_D")
+
+        case "E":
+            imageHandSign.image = UIImage(named: "3_E")
+            
+        case "F":
+            imageHandSign.image = UIImage(named: "4_F")
+            
+        case "G":
+            imageHandSign.image = UIImage(named: "5_G")
+            
+        case "A":
+            imageHandSign.image = UIImage(named: "6_A")
+            
+        case "B":
+            imageHandSign.image = UIImage(named: "7_B")
+        
+        case "C'":
+            imageHandSign.image = UIImage(named: "8_C'")
+            
+        default:
+            print("gak milih key")
         }
         
         if textKey[0] == ""{
