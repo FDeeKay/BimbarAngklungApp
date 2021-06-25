@@ -7,9 +7,35 @@
 
 import UIKit
 import AVFoundation
+import CoreMotion
 
 class FreePlayViewController: UIViewController {
 
+    //properties
+    var kunciPressed = ""
+    var angklungSound = AVAudioPlayer()
+    let motion = CMMotionManager()
+    var timer = Timer()
+    var soundURI: URL?
+    var firstShake = false
+    var secondShake = false
+    var counter = 0
+    var angklungNote: Int = 0
+    
+    //images
+    @IBOutlet weak var freePlayImage: UIImageView!
+    
+    //outlet buttons
+    @IBOutlet weak var buttonC4: UIButton!
+    @IBOutlet weak var buttonD4: UIButton!
+    @IBOutlet weak var buttonE4: UIButton!
+    @IBOutlet weak var buttonF4: UIButton!
+    @IBOutlet weak var buttonG4: UIButton!
+    @IBOutlet weak var buttonA4: UIButton!
+    @IBOutlet weak var buttonB4: UIButton!
+    @IBOutlet weak var buttonC5: UIButton!
+    
+    //viewdidload
     override func viewDidLoad() {
         super.viewDidLoad()
         freePlayImage.image = UIImage(named: "AngklungTest")
@@ -20,31 +46,13 @@ class FreePlayViewController: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
-        // Do any additional setup after loading the view.
     }
     
-    @IBOutlet weak var freePlayImage: UIImageView!
-    
-    @IBOutlet weak var buttonC4: UIButton!
-    @IBOutlet weak var buttonD4: UIButton!
-    @IBOutlet weak var buttonE4: UIButton!
-    @IBOutlet weak var buttonF4: UIButton!
-    @IBOutlet weak var buttonG4: UIButton!
-    @IBOutlet weak var buttonA4: UIButton!
-    @IBOutlet weak var buttonB4: UIButton!
-    @IBOutlet weak var buttonC5: UIButton!
-    
-    
-    var angklungNote: Int = 0
-        
-    var angklungSound = AVAudioPlayer()
-    
+    //Key C
     @IBAction func noteC4(_ sender: Any) {
         angklungNote = 1
         resetButton()
         buttonC4.setImage(UIImage(named: "Free Play - 1_C (on)"), for: .normal)
-        
-        
             do{
                 angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "C4", ofType: "aiff") ?? ""))
             } catch {
@@ -53,6 +61,7 @@ class FreePlayViewController: UIViewController {
         angklungSound.prepareToPlay()
     }
     
+    //Key D
     @IBAction func noteD4(_ sender: Any) {
         angklungNote = 2
         resetButton()
@@ -66,6 +75,7 @@ class FreePlayViewController: UIViewController {
         angklungSound.prepareToPlay()
     }
     
+    //Key E
     @IBAction func noteE4(_ sender: Any) {
         angklungNote = 3
         resetButton()
@@ -79,6 +89,7 @@ class FreePlayViewController: UIViewController {
         angklungSound.prepareToPlay()
     }
     
+    //Key F
     @IBAction func noteF4(_ sender: Any) {
         angklungNote = 4
         resetButton()
@@ -92,6 +103,7 @@ class FreePlayViewController: UIViewController {
         angklungSound.prepareToPlay()
     }
     
+    //Key G
     @IBAction func noteG4(_ sender: Any) {
         angklungNote = 5
         resetButton()
@@ -106,6 +118,7 @@ class FreePlayViewController: UIViewController {
         angklungSound.prepareToPlay()
     }
     
+    //Key A
     @IBAction func noteA4(_ sender: Any) {
         angklungNote = 6
         resetButton()
@@ -119,6 +132,7 @@ class FreePlayViewController: UIViewController {
         angklungSound.prepareToPlay()
     }
     
+    //Key B
     @IBAction func noteB4(_ sender: Any) {
         angklungNote = 7
         resetButton()
@@ -132,6 +146,7 @@ class FreePlayViewController: UIViewController {
         angklungSound.prepareToPlay()
     }
     
+    //Key C tinggi
     @IBAction func noteC5(_ sender: Any) {
         angklungNote = 8
         resetButton()
@@ -145,15 +160,15 @@ class FreePlayViewController: UIViewController {
             }
         angklungSound.prepareToPlay()
     }
-    
-    
-    override var canBecomeFirstResponder: Bool {
-        return true
-    }
-    
-    override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
-        angklungSound.play()
-    }
+//
+//
+//    override var canBecomeFirstResponder: Bool {
+//        return true
+//    }
+//
+//    override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+//        angklungSound.play()
+//    }
     
     func resetButton(){
         buttonC4.setImage(UIImage(named: "Free Play - 1_C (off)"), for: .normal)
@@ -166,5 +181,67 @@ class FreePlayViewController: UIViewController {
         buttonC5.setImage(UIImage(named: "Free Play - 8_C' (off)"), for: .normal)
     }
     
+    //func Gyroscope
+    func startGyros() {
+       if motion.isGyroAvailable {
+          self.motion.gyroUpdateInterval = 1.0 / 60.0
+          self.motion.startGyroUpdates()
+
+          // Configure a timer to fetch the accelerometer data.
+          self.timer = Timer(fire: Date(), interval: (1.0/60.0),
+                             repeats: true, block: { [self] (timer) in
+             // Get the gyro data.
+             if let data = self.motion.gyroData {
+                let x = data.rotationRate.x
+//                let y = data.rotationRate.y
+//                let z = data.rotationRate.z
+                
+                //goyang kiri
+                if x <= -1 {
+                    self.firstShake = true
+                }
+                
+                //goyang kanan
+                if x >= 1 {
+                    self.secondShake = true
+                }
+            
+                if self.firstShake && self.secondShake {
+                    print("YUK BUNYI" + String(self.counter))
+                    self.counter+=1
+                    //GIMAANA CARA LU PLAY NYA
+                    playSound(file: kunciPressed, fileExtension: "aiff")
+                    self.secondShake = false
+                    self.firstShake = false
+//                    self.stopGyros()
+                }
+                // Use the gyroscope data in your app.
+             }
+          })
+
+        // Add the timer to the current run loop.
+        RunLoop.current.add(self.timer, forMode: .default)
+       }
+    }
+    
+    func stopGyros() {
+       if self.timer != nil {
+            self.timer.invalidate()
+            self.timer = Timer()
+            self.motion.stopGyroUpdates()
+       }
+    }
+    
+    //play lagu
+    func playSound(file: String, fileExtension: String, isLoop: Bool = false){
+        soundURI = URL(fileURLWithPath: Bundle.main.path(forResource: file, ofType: fileExtension)!)
+        do {
+            guard let uri = soundURI else {return}
+            angklungSound = try AVAudioPlayer(contentsOf: uri)
+            angklungSound.play()
+        } catch {
+            print("something went wrong")
+        }
+    }
     
 }
