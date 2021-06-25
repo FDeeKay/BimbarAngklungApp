@@ -9,15 +9,20 @@
 /* Begin PBXBuildFile section */
 		05019B1326810B53009D2B7C /* Opening.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05019B1226810B53009D2B7C /* Opening.storyboard */; };
 		0517768D26832A0600C895A8 /* Congratulations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0517768C26832A0600C895A8 /* Congratulations.storyboard */; };
+		05596F972684E77100F5769E /* NewPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05596F962684E77100F5769E /* NewPlayViewController.swift */; };
+		05596F9C2684F73700F5769E /* PartiturCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05596F9A2684F73700F5769E /* PartiturCollectionViewCell.swift */; };
+		05596F9D2684F73700F5769E /* PartiturCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05596F9B2684F73700F5769E /* PartiturCollectionViewCell.xib */; };
 		055C9AA6268312AE00BC66A2 /* PlayScreenMultiplayer .storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055C9AA5268312AE00BC66A2 /* PlayScreenMultiplayer .storyboard */; };
 		055C9AA8268313D200BC66A2 /* CongratulationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C9AA7268313D200BC66A2 /* CongratulationsViewController.swift */; };
 		055C9AAA2683144000BC66A2 /* NotSelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C9AA92683144000BC66A2 /* NotSelectedViewController.swift */; };
 		055C9AAC2683149A00BC66A2 /* Badges.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055C9AAB2683149A00BC66A2 /* Badges.storyboard */; };
 		055C9AAE268314B500BC66A2 /* BadgesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C9AAD268314B500BC66A2 /* BadgesViewController.swift */; };
 		055D0A622682D5BF00917872 /* ChoosePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055D0A612682D5BF00917872 /* ChoosePlayerViewController.swift */; };
+		05D4F9D72685CFC8009D8DD3 /* NewPlayScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05D4F9D62685CFC8009D8DD3 /* NewPlayScreen.storyboard */; };
 		05F51A91267F8C6A0084EEA3 /* MPC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F51A90267F8C6A0084EEA3 /* MPC.storyboard */; };
 		05F51A93267F8CD20084EEA3 /* MPCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F51A92267F8CD20084EEA3 /* MPCViewController.swift */; };
 		05F51A97267F9DE00084EEA3 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F51A96267F9DE00084EEA3 /* Song.swift */; };
+		360B7697268497970036FC55 /* Suwe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 360B7696268497970036FC55 /* Suwe.mp3 */; };
 		3F0F44EB267F2C1600C23FEA /* PickNotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F44EA267F2C1600C23FEA /* PickNotViewController.swift */; };
 		3F10AD882682EB4600B23403 /* gifLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F10AD872682EB4600B23403 /* gifLoader.swift */; };
 		3F1223BF26845F05001C437C /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1223BE26845F05001C437C /* PlayViewController.swift */; };
@@ -67,15 +72,20 @@
 /* Begin PBXFileReference section */
 		05019B1226810B53009D2B7C /* Opening.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Opening.storyboard; sourceTree = "<group>"; };
 		0517768C26832A0600C895A8 /* Congratulations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Congratulations.storyboard; sourceTree = "<group>"; };
+		05596F962684E77100F5769E /* NewPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlayViewController.swift; sourceTree = "<group>"; };
+		05596F9A2684F73700F5769E /* PartiturCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartiturCollectionViewCell.swift; sourceTree = "<group>"; };
+		05596F9B2684F73700F5769E /* PartiturCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PartiturCollectionViewCell.xib; sourceTree = "<group>"; };
 		055C9AA5268312AE00BC66A2 /* PlayScreenMultiplayer .storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "PlayScreenMultiplayer .storyboard"; sourceTree = "<group>"; };
 		055C9AA7268313D200BC66A2 /* CongratulationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsViewController.swift; sourceTree = "<group>"; };
 		055C9AA92683144000BC66A2 /* NotSelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSelectedViewController.swift; sourceTree = "<group>"; };
 		055C9AAB2683149A00BC66A2 /* Badges.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Badges.storyboard; sourceTree = "<group>"; };
 		055C9AAD268314B500BC66A2 /* BadgesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgesViewController.swift; sourceTree = "<group>"; };
 		055D0A612682D5BF00917872 /* ChoosePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePlayerViewController.swift; sourceTree = "<group>"; };
+		05D4F9D62685CFC8009D8DD3 /* NewPlayScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewPlayScreen.storyboard; sourceTree = "<group>"; };
 		05F51A90267F8C6A0084EEA3 /* MPC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MPC.storyboard; sourceTree = "<group>"; };
 		05F51A92267F8CD20084EEA3 /* MPCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCViewController.swift; sourceTree = "<group>"; };
 		05F51A96267F9DE00084EEA3 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		360B7696268497970036FC55 /* Suwe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Suwe.mp3; sourceTree = "<group>"; };
 		3F0F44EA267F2C1600C23FEA /* PickNotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickNotViewController.swift; sourceTree = "<group>"; };
 		3F10AD872682EB4600B23403 /* gifLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gifLoader.swift; sourceTree = "<group>"; };
 		3F1223BE26845F05001C437C /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +155,7 @@
 				055C9AA5268312AE00BC66A2 /* PlayScreenMultiplayer .storyboard */,
 				8F26BD352677919900F020D7 /* LaunchScreen.storyboard */,
 				055C9AAB2683149A00BC66A2 /* Badges.storyboard */,
+				05D4F9D62685CFC8009D8DD3 /* NewPlayScreen.storyboard */,
 				0517768C26832A0600C895A8 /* Congratulations.storyboard */,
 				05F51A8F267F8C120084EEA3 /* Cell */,
 				05F51A8E267F8BE40084EEA3 /* Controller */,
@@ -161,6 +172,7 @@
 				3F0F44EA267F2C1600C23FEA /* PickNotViewController.swift */,
 				8FCCCCDF2679F3D9009FAC16 /* LevelPlayViewController.swift */,
 				055C9AAD268314B500BC66A2 /* BadgesViewController.swift */,
+				05596F962684E77100F5769E /* NewPlayViewController.swift */,
 				8FCCCCB52677C788009FAC16 /* FreePlayViewController.swift */,
 				8FCCCCD926788E8E009FAC16 /* LevelSelectionViewController.swift */,
 				055C9AA92683144000BC66A2 /* NotSelectedViewController.swift */,
@@ -177,6 +189,8 @@
 			children = (
 				8FCCCCE5267B445B009FAC16 /* SongSelectionTableViewCell.swift */,
 				8FCCCCDD2678C046009FAC16 /* LevelSelectionViewCell.swift */,
+				05596F9A2684F73700F5769E /* PartiturCollectionViewCell.swift */,
+				05596F9B2684F73700F5769E /* PartiturCollectionViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -246,6 +260,7 @@
 		8FCCCCC82677D7E5009FAC16 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				360B7696268497970036FC55 /* Suwe.mp3 */,
 				8FCCCCCC2677D824009FAC16 /* A4.aiff */,
 				8FCCCCD02677D824009FAC16 /* B4.aiff */,
 				8FCCCCCD2677D824009FAC16 /* C4.aiff */,
@@ -368,13 +383,16 @@
 				8FCCCCD32677D824009FAC16 /* E4.aiff in Resources */,
 				8F26BD372677919900F020D7 /* LaunchScreen.storyboard in Resources */,
 				055C9AAC2683149A00BC66A2 /* Badges.storyboard in Resources */,
+				05D4F9D72685CFC8009D8DD3 /* NewPlayScreen.storyboard in Resources */,
 				8FCCCCD52677D824009FAC16 /* C4.aiff in Resources */,
 				8FCCCCD62677D824009FAC16 /* D4.aiff in Resources */,
+				360B7697268497970036FC55 /* Suwe.mp3 in Resources */,
 				8FCCCCD72677D824009FAC16 /* G4.aiff in Resources */,
 				8F26BD342677919900F020D7 /* Assets.xcassets in Resources */,
 				0517768D26832A0600C895A8 /* Congratulations.storyboard in Resources */,
 				8F26BD2F2677919800F020D7 /* Main.storyboard in Resources */,
 				8FCCCCD22677D824009FAC16 /* F4.aiff in Resources */,
+				05596F9D2684F73700F5769E /* PartiturCollectionViewCell.xib in Resources */,
 				8FCCCCD12677D824009FAC16 /* C5.aiff in Resources */,
 				8FCCCCD42677D824009FAC16 /* A4.aiff in Resources */,
 			);
@@ -412,11 +430,13 @@
 				8F26BD282677919800F020D7 /* AppDelegate.swift in Sources */,
 				8FCCCCE02679F3D9009FAC16 /* LevelPlayViewController.swift in Sources */,
 				8FCCCCE4267B3FC0009FAC16 /* SelectSongViewController.swift in Sources */,
+				05596F9C2684F73700F5769E /* PartiturCollectionViewCell.swift in Sources */,
 				8F26BD2A2677919800F020D7 /* SceneDelegate.swift in Sources */,
 				8FC1D9252680A629009A2FF5 /* SongInformationModalViewController.swift in Sources */,
 				055D0A622682D5BF00917872 /* ChoosePlayerViewController.swift in Sources */,
 				055C9AA8268313D200BC66A2 /* CongratulationsViewController.swift in Sources */,
 				8F26BD322677919800F020D7 /* BimbarAngklungApp.xcdatamodeld in Sources */,
+				05596F972684E77100F5769E /* NewPlayViewController.swift in Sources */,
 				055C9AAE268314B500BC66A2 /* BadgesViewController.swift in Sources */,
 				05F51A97267F9DE00084EEA3 /* Song.swift in Sources */,
 				3F1223BF26845F05001C437C /* PlayViewController.swift in Sources */,

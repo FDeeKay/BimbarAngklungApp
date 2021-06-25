@@ -35,6 +35,9 @@
                                 <state key="normal" image="Congrats Screen_play again">
                                     <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="playAgain:" destination="Ehj-JL-2fU" eventType="touchUpInside" id="wsX-Dr-TDW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rO3-1Z-oeD">
                                 <rect key="frame" x="38" y="597" width="147" height="40"/>
@@ -44,11 +47,17 @@
                                 <state key="normal" image="Congrats Screen_pick other songs">
                                     <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="pickOtherSong:" destination="Ehj-JL-2fU" eventType="touchUpInside" id="U4C-t9-qUc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxc-PM-hCe">
                                 <rect key="frame" x="206" y="597" width="147" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Congrats Screen_Main Screen"/>
+                                <connections>
+                                    <action selector="backToMainScreen:" destination="Ehj-JL-2fU" eventType="touchUpInside" id="Omx-6q-XOZ"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Thumbs Up" translatesAutoresizingMaskIntoConstraints="NO" id="CIg-RQ-Ybg">
                                 <rect key="frame" x="98" y="287" width="194" height="194"/>
@@ -66,10 +75,32 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="khp-Ta-Ikl"/>
+                    <connections>
+                        <segue destination="No2-0c-QCe" kind="showDetail" identifier="GoToPlayScreen" id="A0e-jv-jP5"/>
+                        <segue destination="RSZ-Fn-Wa5" kind="show" identifier="GoToSelectSong" id="BxC-Ul-dIz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sbz-aJ-wTr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6324.6153846153848" y="-510.42654028436016"/>
+        </scene>
+        <!--SelectSong-->
+        <scene sceneID="isK-gT-8HD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="SelectSong" id="RSZ-Fn-Wa5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5eA-Ue-SjE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xmh-nh-v11" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7030" y="-510"/>
+        </scene>
+        <!--NewPlayScreen-->
+        <scene sceneID="sIP-CV-h7u">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NewPlayScreen" referencedIdentifier="NewPlayScreen" id="No2-0c-QCe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eCR-KU-3aR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6325" y="-92"/>
         </scene>
     </scenes>
     <resources>

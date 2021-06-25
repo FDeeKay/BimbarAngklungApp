@@ -35,14 +35,22 @@ class SelectSongViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     
+    var modeChosen:String = ""
+    
     @IBOutlet weak var imageCell: SongSelectionTableViewCell!
     
     
     
     @IBAction func playButton(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "PlayScreenMultiplayer ", bundle: nil);
-        let viewController = storyboard.instantiateViewController(withIdentifier: "PickNot")
-        self.navigationController?.pushViewController(viewController, animated: true)
+        if modeChosen == "SinglePlayer" {
+            let storyboard = UIStoryboard(name: "NewPlayScreen", bundle: nil);
+            let viewController = storyboard.instantiateViewController(withIdentifier: "NewPlayScreen")
+            self.navigationController?.pushViewController(viewController, animated: true)
+        } else {
+            let storyboard = UIStoryboard(name: "PlayScreenMultiplayer ", bundle: nil);
+            let viewController = storyboard.instantiateViewController(withIdentifier: "PickNot")
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
     }
     
     
