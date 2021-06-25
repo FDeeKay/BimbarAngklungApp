@@ -38,9 +38,9 @@ class FreePlayViewController: UIViewController {
     //viewdidload
     override func viewDidLoad() {
         super.viewDidLoad()
-        freePlayImage.image = UIImage(named: "AngklungTest")
+        freePlayImage.image = UIImage(named: "Angklung")
         angklungNote = 0
-//        becomeFirstResponder()
+        playSoundStop()
         resetButton()
         startGyros()
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
@@ -207,11 +207,13 @@ class FreePlayViewController: UIViewController {
                 //goyang kiri
                 if x <= -1 {
                     self.firstShake = true
+                    freePlayImage.transform = CGAffineTransform(rotationAngle: .pi/20)
                 }
                 
                 //goyang kanan
                 if x >= 1 {
                     self.secondShake = true
+                    freePlayImage.transform = .identity
                 }
             
                 if self.firstShake && self.secondShake {
