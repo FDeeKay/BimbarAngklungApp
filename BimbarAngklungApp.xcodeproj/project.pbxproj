@@ -18,6 +18,7 @@
 		055C9AAC2683149A00BC66A2 /* Badges.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055C9AAB2683149A00BC66A2 /* Badges.storyboard */; };
 		055C9AAE268314B500BC66A2 /* BadgesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C9AAD268314B500BC66A2 /* BadgesViewController.swift */; };
 		055D0A622682D5BF00917872 /* ChoosePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055D0A612682D5BF00917872 /* ChoosePlayerViewController.swift */; };
+		05D4F9D72685CFC8009D8DD3 /* NewPlayScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05D4F9D62685CFC8009D8DD3 /* NewPlayScreen.storyboard */; };
 		05F51A91267F8C6A0084EEA3 /* MPC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F51A90267F8C6A0084EEA3 /* MPC.storyboard */; };
 		05F51A93267F8CD20084EEA3 /* MPCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F51A92267F8CD20084EEA3 /* MPCViewController.swift */; };
 		05F51A97267F9DE00084EEA3 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F51A96267F9DE00084EEA3 /* Song.swift */; };
@@ -80,6 +81,7 @@
 		055C9AAB2683149A00BC66A2 /* Badges.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Badges.storyboard; sourceTree = "<group>"; };
 		055C9AAD268314B500BC66A2 /* BadgesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgesViewController.swift; sourceTree = "<group>"; };
 		055D0A612682D5BF00917872 /* ChoosePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePlayerViewController.swift; sourceTree = "<group>"; };
+		05D4F9D62685CFC8009D8DD3 /* NewPlayScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewPlayScreen.storyboard; sourceTree = "<group>"; };
 		05F51A90267F8C6A0084EEA3 /* MPC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MPC.storyboard; sourceTree = "<group>"; };
 		05F51A92267F8CD20084EEA3 /* MPCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCViewController.swift; sourceTree = "<group>"; };
 		05F51A96267F9DE00084EEA3 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				055C9AA5268312AE00BC66A2 /* PlayScreenMultiplayer .storyboard */,
 				8F26BD352677919900F020D7 /* LaunchScreen.storyboard */,
 				055C9AAB2683149A00BC66A2 /* Badges.storyboard */,
+				05D4F9D62685CFC8009D8DD3 /* NewPlayScreen.storyboard */,
 				0517768C26832A0600C895A8 /* Congratulations.storyboard */,
 				05F51A8F267F8C120084EEA3 /* Cell */,
 				05F51A8E267F8BE40084EEA3 /* Controller */,
@@ -380,6 +383,7 @@
 				8FCCCCD32677D824009FAC16 /* E4.aiff in Resources */,
 				8F26BD372677919900F020D7 /* LaunchScreen.storyboard in Resources */,
 				055C9AAC2683149A00BC66A2 /* Badges.storyboard in Resources */,
+				05D4F9D72685CFC8009D8DD3 /* NewPlayScreen.storyboard in Resources */,
 				8FCCCCD52677D824009FAC16 /* C4.aiff in Resources */,
 				8FCCCCD62677D824009FAC16 /* D4.aiff in Resources */,
 				360B7697268497970036FC55 /* Suwe.mp3 in Resources */,
