@@ -74,7 +74,7 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
         cell.labelText.text = textLyric[indexPath.row]
         
         return cell
-        
+
     }
     
         // button sound and shake

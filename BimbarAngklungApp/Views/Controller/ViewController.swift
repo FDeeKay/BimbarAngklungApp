@@ -9,9 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var AngklungImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         mainImage.image = UIImage(named: "Main Screen - Free play")
+        UIView.animateKeyframes(withDuration: 1.5, delay: 0, options: [.autoreverse, .repeat]){
+            self.AngklungImage.frame = CGRect(x: 89, y: 255, width: 212, height: 294)}
+        
         mainImage.isUserInteractionEnabled = true
         
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
@@ -32,5 +36,6 @@ class ViewController: UIViewController {
     @IBAction func songsButton(_ sender: Any) {
         performSegue(withIdentifier: "GoToChoosePlayer", sender: sender)
     }
+    
 }
 

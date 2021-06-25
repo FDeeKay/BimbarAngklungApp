@@ -90,6 +90,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="tt8-WE-PFd"/>
                     <connections>
+                        <outlet property="AngklungImage" destination="Sqd-8S-B3L" id="eg3-Dt-MnZ"/>
                         <outlet property="mainImage" destination="yNA-mE-HEp" id="HEG-0f-0np"/>
                         <segue destination="emW-zd-omX" kind="show" identifier="GoToChoosePlayer" id="qWL-4k-tCy"/>
                     </connections>
@@ -413,7 +414,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Free Play" translatesAutoresizingMaskIntoConstraints="NO" id="nUu-QY-dQa">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="New FPS" translatesAutoresizingMaskIntoConstraints="NO" id="nUu-QY-dQa">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -425,16 +426,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Angklung" translatesAutoresizingMaskIntoConstraints="NO" id="bUb-Jc-3g1">
-                                <rect key="frame" x="99" y="297" width="180" height="250"/>
+                                <rect key="frame" x="105" y="297" width="180" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap the button and shake your Angklung to play" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEh-wx-NRh">
-                                <rect key="frame" x="33" y="578" width="327" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.15686274509803921" green="0.2627450980392157" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNT-HG-wg2">
                                 <rect key="frame" x="30" y="627" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -515,6 +509,13 @@
                                     <action selector="noteC5:" destination="1G2-06-JPp" eventType="touchUpInside" id="Trt-Ll-oqX"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap the button and shake your phone to play" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEh-wx-NRh">
+                                <rect key="frame" x="43" y="578" width="305" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.15686274509803921" green="0.2627450980392157" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tik-FB-ho1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -539,7 +540,6 @@
     </scenes>
     <resources>
         <image name="Angklung" width="630" height="882"/>
-        <image name="Free Play" width="1125" height="2436"/>
         <image name="Free Play - 1_C (off)" width="165" height="165"/>
         <image name="Free Play - 2_D (off)" width="165" height="165"/>
         <image name="Free Play - 3_E (off)" width="165" height="165"/>
@@ -552,6 +552,7 @@
         <image name="Main Screen - Free play" width="441" height="120"/>
         <image name="Main Screen - Play with songs" width="945" height="120"/>
         <image name="Main Screen New" width="1125" height="2436"/>
+        <image name="New FPS" width="1125" height="2436"/>
         <image name="Pick Song Screen" width="1125" height="2436"/>
         <image name="song1" width="349" height="549"/>
         <systemColor name="labelColor">
