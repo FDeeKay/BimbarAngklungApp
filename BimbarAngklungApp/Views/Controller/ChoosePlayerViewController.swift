@@ -12,6 +12,8 @@ class ChoosePlayerViewController: UIViewController {
 //    @IBOutlet weak var multiplayerButton: UIImageView!
 //    @IBOutlet weak var singleplayerButton: UIImageView!
     
+    var modeChosen : String = ""
+    
     @IBOutlet weak var multiplayerButton: UIButton!
     @IBOutlet weak var singleplayerButton: UIButton!
     
@@ -28,9 +30,11 @@ class ChoosePlayerViewController: UIViewController {
     
     @IBAction func multiplayerButtonTapped(_ sender: Any) {
         performSegue(withIdentifier: "GoToMPC", sender: sender)
+        modeChosen = "Multiplayer"
     }
     @IBAction func singleplayerButtonTapped(_ sender: Any) {
         performSegue(withIdentifier: "GoToSelectSong", sender: sender)
+        modeChosen = "SinglePlayer"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
