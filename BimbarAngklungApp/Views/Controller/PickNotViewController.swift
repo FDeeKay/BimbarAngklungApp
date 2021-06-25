@@ -184,7 +184,7 @@ class PickNotViewController: UIViewController {
     
     @IBAction func tapPlayNotViewController(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil);
-        let viewController = storyboard.instantiateViewController(withIdentifier: "LevelPlay")
+        let viewController = storyboard.instantiateViewController(withIdentifier: "LevelPlay") as! LevelPlayViewController
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     

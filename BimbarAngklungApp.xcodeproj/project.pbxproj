@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		05019B1326810B53009D2B7C /* Opening.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05019B1226810B53009D2B7C /* Opening.storyboard */; };
 		0517768D26832A0600C895A8 /* Congratulations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0517768C26832A0600C895A8 /* Congratulations.storyboard */; };
+		05596F972684E77100F5769E /* NewPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05596F962684E77100F5769E /* NewPlayViewController.swift */; };
+		05596F9C2684F73700F5769E /* PartiturCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05596F9A2684F73700F5769E /* PartiturCollectionViewCell.swift */; };
+		05596F9D2684F73700F5769E /* PartiturCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05596F9B2684F73700F5769E /* PartiturCollectionViewCell.xib */; };
 		055C9AA6268312AE00BC66A2 /* PlayScreenMultiplayer .storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055C9AA5268312AE00BC66A2 /* PlayScreenMultiplayer .storyboard */; };
 		055C9AA8268313D200BC66A2 /* CongratulationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C9AA7268313D200BC66A2 /* CongratulationsViewController.swift */; };
 		055C9AAA2683144000BC66A2 /* NotSelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C9AA92683144000BC66A2 /* NotSelectedViewController.swift */; };
@@ -68,6 +71,9 @@
 /* Begin PBXFileReference section */
 		05019B1226810B53009D2B7C /* Opening.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Opening.storyboard; sourceTree = "<group>"; };
 		0517768C26832A0600C895A8 /* Congratulations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Congratulations.storyboard; sourceTree = "<group>"; };
+		05596F962684E77100F5769E /* NewPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlayViewController.swift; sourceTree = "<group>"; };
+		05596F9A2684F73700F5769E /* PartiturCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartiturCollectionViewCell.swift; sourceTree = "<group>"; };
+		05596F9B2684F73700F5769E /* PartiturCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PartiturCollectionViewCell.xib; sourceTree = "<group>"; };
 		055C9AA5268312AE00BC66A2 /* PlayScreenMultiplayer .storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "PlayScreenMultiplayer .storyboard"; sourceTree = "<group>"; };
 		055C9AA7268313D200BC66A2 /* CongratulationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsViewController.swift; sourceTree = "<group>"; };
 		055C9AA92683144000BC66A2 /* NotSelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSelectedViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +169,7 @@
 				3F0F44EA267F2C1600C23FEA /* PickNotViewController.swift */,
 				8FCCCCDF2679F3D9009FAC16 /* LevelPlayViewController.swift */,
 				055C9AAD268314B500BC66A2 /* BadgesViewController.swift */,
+				05596F962684E77100F5769E /* NewPlayViewController.swift */,
 				8FCCCCB52677C788009FAC16 /* FreePlayViewController.swift */,
 				8FCCCCD926788E8E009FAC16 /* LevelSelectionViewController.swift */,
 				055C9AA92683144000BC66A2 /* NotSelectedViewController.swift */,
@@ -179,6 +186,8 @@
 			children = (
 				8FCCCCE5267B445B009FAC16 /* SongSelectionTableViewCell.swift */,
 				8FCCCCDD2678C046009FAC16 /* LevelSelectionViewCell.swift */,
+				05596F9A2684F73700F5769E /* PartiturCollectionViewCell.swift */,
+				05596F9B2684F73700F5769E /* PartiturCollectionViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -379,6 +388,7 @@
 				0517768D26832A0600C895A8 /* Congratulations.storyboard in Resources */,
 				8F26BD2F2677919800F020D7 /* Main.storyboard in Resources */,
 				8FCCCCD22677D824009FAC16 /* F4.aiff in Resources */,
+				05596F9D2684F73700F5769E /* PartiturCollectionViewCell.xib in Resources */,
 				8FCCCCD12677D824009FAC16 /* C5.aiff in Resources */,
 				8FCCCCD42677D824009FAC16 /* A4.aiff in Resources */,
 			);
@@ -416,11 +426,13 @@
 				8F26BD282677919800F020D7 /* AppDelegate.swift in Sources */,
 				8FCCCCE02679F3D9009FAC16 /* LevelPlayViewController.swift in Sources */,
 				8FCCCCE4267B3FC0009FAC16 /* SelectSongViewController.swift in Sources */,
+				05596F9C2684F73700F5769E /* PartiturCollectionViewCell.swift in Sources */,
 				8F26BD2A2677919800F020D7 /* SceneDelegate.swift in Sources */,
 				8FC1D9252680A629009A2FF5 /* SongInformationModalViewController.swift in Sources */,
 				055D0A622682D5BF00917872 /* ChoosePlayerViewController.swift in Sources */,
 				055C9AA8268313D200BC66A2 /* CongratulationsViewController.swift in Sources */,
 				8F26BD322677919800F020D7 /* BimbarAngklungApp.xcdatamodeld in Sources */,
+				05596F972684E77100F5769E /* NewPlayViewController.swift in Sources */,
 				055C9AAE268314B500BC66A2 /* BadgesViewController.swift in Sources */,
 				05F51A97267F9DE00084EEA3 /* Song.swift in Sources */,
 				3F1223BF26845F05001C437C /* PlayViewController.swift in Sources */,
