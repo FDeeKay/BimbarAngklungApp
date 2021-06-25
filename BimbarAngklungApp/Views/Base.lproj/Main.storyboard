@@ -90,6 +90,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="tt8-WE-PFd"/>
                     <connections>
+                        <outlet property="AngklungImage" destination="Sqd-8S-B3L" id="eg3-Dt-MnZ"/>
                         <outlet property="mainImage" destination="yNA-mE-HEp" id="HEG-0f-0np"/>
                         <segue destination="emW-zd-omX" kind="show" identifier="GoToChoosePlayer" id="qWL-4k-tCy"/>
                     </connections>
