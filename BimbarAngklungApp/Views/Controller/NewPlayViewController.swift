@@ -19,13 +19,13 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
         "E", "F", "F", "G", "E", "F",
         "G", "B", "B", "B", "C'","C'", "B",
         "B", "B", "A", "A", "F",
-        "F", "E", "E", "C"]
+        "F", "E", "E", "C", ""]
     
     var textLyric: [String] = ["Su", "we", "o", "ra", "ja", "mu",
     "ja", "mu", "go", "dhong", "te", "lo",
     "Su", "we", "o", "ra", "ke", "te", "mu",
     "ke", "te", "mu", "pi", "san",
-    "ga", "we", "ge", "lo"]
+    "ga", "we", "ge", "lo", ""]
     
     var frame = CGRect(x:0, y:0, width:0, height: 0)
     
@@ -202,6 +202,12 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
         textKey.removeFirst()
         textLyric.removeFirst()
         partiturCollectionView.reloadData()
+        }
+        
+        if textKey[0] == ""{
+            let storyboard = UIStoryboard(name: "Congratulations", bundle: nil);
+            let viewController = storyboard.instantiateViewController(withIdentifier: "Congrats") as! CongratulationsViewController;
+            self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
 
