@@ -40,9 +40,9 @@ class FreePlayViewController: UIViewController {
         super.viewDidLoad()
         freePlayImage.image = UIImage(named: "AngklungTest")
         angklungNote = 0
-        becomeFirstResponder()
+//        becomeFirstResponder()
         resetButton()
-        
+        startGyros()
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
@@ -51,113 +51,112 @@ class FreePlayViewController: UIViewController {
     //Key C
     @IBAction func noteC4(_ sender: Any) {
         angklungNote = 1
+        kunciPressed = "C4"
         resetButton()
         buttonC4.setImage(UIImage(named: "Free Play - 1_C (on)"), for: .normal)
-            do{
-                angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "C4", ofType: "aiff") ?? ""))
-            } catch {
-                print("Error")
-            }
+//            do{
+//                angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "C4", ofType: "aiff") ?? ""))
+//            } catch {
+//                print("Error")
+//            }
         angklungSound.prepareToPlay()
     }
     
     //Key D
     @IBAction func noteD4(_ sender: Any) {
         angklungNote = 2
+        kunciPressed = "D4"
         resetButton()
         buttonD4.setImage(UIImage(named: "Free Play - 2_D (on)"), for: .normal)
-        
-            do{
-                angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "D4", ofType: "aiff") ?? ""))
-            } catch {
-                print("Error")
-            }
+//            do{
+//                angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "D4", ofType: "aiff") ?? ""))
+//            } catch {
+//                print("Error")
+//            }
         angklungSound.prepareToPlay()
     }
     
     //Key E
     @IBAction func noteE4(_ sender: Any) {
         angklungNote = 3
+        kunciPressed = "E4"
         resetButton()
         buttonE4.setImage(UIImage(named: "Free Play - 3_E (on)"), for: .normal)
-        
-            do{
-                angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "E4", ofType: "aiff") ?? ""))
-            } catch {
-                print("Error")
-            }
+//            do{
+//                angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "E4", ofType: "aiff") ?? ""))
+//            } catch {
+//                print("Error")
+//            }
         angklungSound.prepareToPlay()
     }
     
     //Key F
     @IBAction func noteF4(_ sender: Any) {
         angklungNote = 4
+        kunciPressed = "F4"
         resetButton()
         buttonF4.setImage(UIImage(named: "Free Play - 4_F (on)"), for: .normal)
-        
-            do{
-                angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "F4", ofType: "aiff") ?? ""))
-            } catch {
-                print("Error")
-            }
+//            do{
+//                angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "F4", ofType: "aiff") ?? ""))
+//            } catch {
+//                print("Error")
+//            }
         angklungSound.prepareToPlay()
     }
     
     //Key G
     @IBAction func noteG4(_ sender: Any) {
         angklungNote = 5
+        kunciPressed = "G4"
         resetButton()
         buttonG4.setImage(UIImage(named: "Free Play - 5_G (on)"), for: .normal)
-
-        
-            do{
-                angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "G4", ofType: "aiff") ?? ""))
-            } catch {
-                print("Error")
-            }
+//            do{
+//                angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "G4", ofType: "aiff") ?? ""))
+//            } catch {
+//                print("Error")
+//            }
         angklungSound.prepareToPlay()
     }
     
     //Key A
     @IBAction func noteA4(_ sender: Any) {
         angklungNote = 6
+        kunciPressed = "A4"
         resetButton()
         buttonA4.setImage(UIImage(named: "Free Play - 6_A (on)"), for: .normal)
-        
-            do{
-                angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "A4", ofType: "aiff") ?? ""))
-            } catch {
-                print("Error")
-            }
+//            do{
+//                angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "A4", ofType: "aiff") ?? ""))
+//            } catch {
+//                print("Error")
+//            }
         angklungSound.prepareToPlay()
     }
     
     //Key B
     @IBAction func noteB4(_ sender: Any) {
         angklungNote = 7
+        kunciPressed = "B4"
         resetButton()
         buttonB4.setImage(UIImage(named: "Free Play - 7_B (on)"), for: .normal)
-        
-            do{
-                angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "B4", ofType: "aiff") ?? ""))
-            } catch {
-                print("Error")
-            }
+//            do{
+//                angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "B4", ofType: "aiff") ?? ""))
+//            } catch {
+//                print("Error")
+//            }
         angklungSound.prepareToPlay()
     }
     
     //Key C tinggi
     @IBAction func noteC5(_ sender: Any) {
         angklungNote = 8
+        kunciPressed = "C5"
         resetButton()
         buttonC5.setImage(UIImage(named: "Free Play - 8_C' (on)"), for: .normal)
-        
-        
-            do{
-                angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "C5", ofType: "aiff") ?? ""))
-            } catch {
-                print("Error")
-            }
+//            do{
+//                angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "C5", ofType: "aiff") ?? ""))
+//            } catch {
+//                print("Error")
+//            }
         angklungSound.prepareToPlay()
     }
 //
