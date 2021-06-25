@@ -229,15 +229,23 @@ class PickNotViewController: UIViewController {
     }
     
     @IBAction func Not1highClicked(_ sender: Any) {
-        changeLabel2(text: "C' pops up in the song")
-        resetColorBtn()
-        Not1hibtn.backgroundColor = UIColor.systemGreen
-        do{
-            suaraAngklung = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "C5", ofType: "aiff") ?? ""))
-            suaraAngklung.play()
-            keyChosen = "C'"
-        } catch {
-            print("Error")
+        if btn8IsTouched == false{
+            changeLabel2(text: "C' pops up in the song")
+            //resetColorBtn()
+            Not1hibtn.backgroundColor = UIColor.systemGreen
+            btn8IsTouched = true
+            do{
+                suaraAngklung = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "C5", ofType: "aiff") ?? ""))
+                suaraAngklung.play()
+                keyChosen = "C'"
+            } catch {
+                print("Error")
+            }
+        } else if btn8IsTouched == true{
+            changeLabel2(text: "your note pops up in the song")
+            //resetColorBtn()
+            Not1hibtn.backgroundColor = UIColor.white
+            btn8IsTouched = false
         }
     }
 
