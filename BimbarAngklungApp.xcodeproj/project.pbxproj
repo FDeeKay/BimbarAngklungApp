@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		05019B1326810B53009D2B7C /* Opening.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05019B1226810B53009D2B7C /* Opening.storyboard */; };
+		050464C5268746EE00536673 /* A4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 050464C02687458D00536673 /* A4.aiff */; };
+		050464C6268746EE00536673 /* F4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 050464C42687458D00536673 /* F4.aiff */; };
+		050464C7268746EE00536673 /* D4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 050464BF2687458D00536673 /* D4.aiff */; };
+		050464C8268746EE00536673 /* C4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 050464BD2687458D00536673 /* C4.aiff */; };
+		050464C9268746EE00536673 /* C5.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 050464C12687458D00536673 /* C5.aiff */; };
+		050464CA268746EE00536673 /* E4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 050464BE2687458D00536673 /* E4.aiff */; };
+		050464CB268746EE00536673 /* B4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 050464C22687458D00536673 /* B4.aiff */; };
+		050464CC268746EE00536673 /* G4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 050464C32687458D00536673 /* G4.aiff */; };
 		0517768D26832A0600C895A8 /* Congratulations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0517768C26832A0600C895A8 /* Congratulations.storyboard */; };
 		05596F972684E77100F5769E /* NewPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05596F962684E77100F5769E /* NewPlayViewController.swift */; };
 		05596F9C2684F73700F5769E /* PartiturCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05596F9A2684F73700F5769E /* PartiturCollectionViewCell.swift */; };
@@ -419,8 +427,11 @@
 				368BCB012686BCF700AA4ADD /* E5g.aiff in Resources */,
 				055C9AA6268312AE00BC66A2 /* PlayScreenMultiplayer .storyboard in Resources */,
 				368BCB0E2686BCF700AA4ADD /* G4g.aiff in Resources */,
+				050464C9268746EE00536673 /* C5.aiff in Resources */,
 				3686881A268742500093AD7C /* Angklung Sounds in Resources */,
 				05F51A91267F8C6A0084EEA3 /* MPC.storyboard in Resources */,
+				050464C8268746EE00536673 /* C4.aiff in Resources */,
+				050464C6268746EE00536673 /* F4.aiff in Resources */,
 				368BCB042686BCF700AA4ADD /* D4g.aiff in Resources */,
 				05019B1326810B53009D2B7C /* Opening.storyboard in Resources */,
 				368BCB002686BCF700AA4ADD /* G5g.aiff in Resources */,
@@ -432,15 +443,20 @@
 				368BCB0D2686BCF700AA4ADD /* F5g.aiff in Resources */,
 				368BCB062686BCF700AA4ADD /* F4g.aiff in Resources */,
 				055C9AAC2683149A00BC66A2 /* Badges.storyboard in Resources */,
+				050464CB268746EE00536673 /* B4.aiff in Resources */,
 				05D4F9D72685CFC8009D8DD3 /* NewPlayScreen.storyboard in Resources */,
 				360B7697268497970036FC55 /* Suwe.mp3 in Resources */,
 				8F26BD342677919900F020D7 /* Assets.xcassets in Resources */,
 				368BCB022686BCF700AA4ADD /* D5g.aiff in Resources */,
+				050464CC268746EE00536673 /* G4.aiff in Resources */,
+				050464C7268746EE00536673 /* D4.aiff in Resources */,
+				050464C5268746EE00536673 /* A4.aiff in Resources */,
 				368BCB0B2686BCF700AA4ADD /* B4g.aiff in Resources */,
 				368BCB0C2686BCF700AA4ADD /* C4g.aiff in Resources */,
 				368BCB072686BCF700AA4ADD /* B5g.aiff in Resources */,
 				0517768D26832A0600C895A8 /* Congratulations.storyboard in Resources */,
 				368BCB092686BCF700AA4ADD /* E4g.aiff in Resources */,
+				050464CA268746EE00536673 /* E4.aiff in Resources */,
 				8F26BD2F2677919800F020D7 /* Main.storyboard in Resources */,
 				05596F9D2684F73700F5769E /* PartiturCollectionViewCell.xib in Resources */,
 			);
