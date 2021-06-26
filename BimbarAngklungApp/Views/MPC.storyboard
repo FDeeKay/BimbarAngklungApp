@@ -102,7 +102,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Multiple Screen" translatesAutoresizingMaskIntoConstraints="NO" id="Vtp-5K-1ym">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Song" translatesAutoresizingMaskIntoConstraints="NO" id="Vtp-5K-1ym">
                                 <rect key="frame" x="0.0" y="-5" width="390" height="853"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -217,12 +217,8 @@
                                     <action selector="hostButton:" destination="lX3-Fu-EJk" eventType="touchUpInside" id="rFr-ce-AOC"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle" translatesAutoresizingMaskIntoConstraints="NO" id="70T-oh-bin">
-                                <rect key="frame" x="108" y="330" width="174" height="174"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YGk-Gl-53w">
-                                <rect key="frame" x="0.0" y="258" width="390" height="80"/>
+                                <rect key="frame" x="0.0" y="351" width="390" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lcd-ru-8ww">
@@ -234,7 +230,7 @@
                                 <cells/>
                             </collectionView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3_E" translatesAutoresizingMaskIntoConstraints="NO" id="XhQ-wv-dbL">
-                                <rect key="frame" x="75" y="353" width="240" height="128"/>
+                                <rect key="frame" x="114" y="220" width="163" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose your role!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQH-k1-aNw">
@@ -272,7 +268,6 @@
     </scenes>
     <resources>
         <image name="3_E" width="477" height="276"/>
-        <image name="Circle" width="690" height="690"/>
         <image name="Free Play - 1_C (off)" width="165" height="165"/>
         <image name="Free Play - 2_D (off)" width="165" height="165"/>
         <image name="Free Play - 3_E (off)" width="165" height="165"/>
@@ -282,6 +277,7 @@
         <image name="Free Play - 7_B (off)" width="165" height="165"/>
         <image name="Free Play - 8_C' (off)" width="165" height="174"/>
         <image name="Multiple Screen" width="1125" height="2436"/>
+        <image name="Song" width="1125" height="2436"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
