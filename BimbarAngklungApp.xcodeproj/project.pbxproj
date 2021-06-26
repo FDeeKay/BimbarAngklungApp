@@ -16,6 +16,15 @@
 		050464CA268746EE00536673 /* E4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 050464BE2687458D00536673 /* E4.aiff */; };
 		050464CB268746EE00536673 /* B4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 050464C22687458D00536673 /* B4.aiff */; };
 		050464CC268746EE00536673 /* G4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 050464C32687458D00536673 /* G4.aiff */; };
+		05115F8E26876F2400172550 /* SF-Pro-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05115F8526876F2200172550 /* SF-Pro-Rounded-Medium.otf */; };
+		05115F8F26876F2400172550 /* SF-Pro-Rounded-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05115F8626876F2200172550 /* SF-Pro-Rounded-Heavy.otf */; };
+		05115F9026876F2400172550 /* SF-Pro-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05115F8726876F2200172550 /* SF-Pro-Rounded-Semibold.otf */; };
+		05115F9126876F2400172550 /* SF-Pro-Rounded-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05115F8826876F2200172550 /* SF-Pro-Rounded-Thin.otf */; };
+		05115F9226876F2400172550 /* SF-Pro-Rounded-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05115F8926876F2300172550 /* SF-Pro-Rounded-Black.otf */; };
+		05115F9326876F2400172550 /* SF-Pro-Rounded-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05115F8A26876F2300172550 /* SF-Pro-Rounded-Light.otf */; };
+		05115F9426876F2400172550 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05115F8B26876F2300172550 /* SF-Pro-Rounded-Bold.otf */; };
+		05115F9526876F2400172550 /* SF-Pro-Rounded-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05115F8C26876F2300172550 /* SF-Pro-Rounded-Ultralight.otf */; };
+		05115F9626876F2400172550 /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05115F8D26876F2400172550 /* SF-Pro-Rounded-Regular.otf */; };
 		0517768D26832A0600C895A8 /* Congratulations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0517768C26832A0600C895A8 /* Congratulations.storyboard */; };
 		05596F972684E77100F5769E /* NewPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05596F962684E77100F5769E /* NewPlayViewController.swift */; };
 		05596F9C2684F73700F5769E /* PartiturCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05596F9A2684F73700F5769E /* PartiturCollectionViewCell.swift */; };
@@ -95,6 +104,15 @@
 		050464C22687458D00536673 /* B4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = B4.aiff; sourceTree = "<group>"; };
 		050464C32687458D00536673 /* G4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = G4.aiff; sourceTree = "<group>"; };
 		050464C42687458D00536673 /* F4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = F4.aiff; sourceTree = "<group>"; };
+		05115F8526876F2200172550 /* SF-Pro-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Medium.otf"; sourceTree = "<group>"; };
+		05115F8626876F2200172550 /* SF-Pro-Rounded-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Heavy.otf"; sourceTree = "<group>"; };
+		05115F8726876F2200172550 /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
+		05115F8826876F2200172550 /* SF-Pro-Rounded-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Thin.otf"; sourceTree = "<group>"; };
+		05115F8926876F2300172550 /* SF-Pro-Rounded-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Black.otf"; sourceTree = "<group>"; };
+		05115F8A26876F2300172550 /* SF-Pro-Rounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Light.otf"; sourceTree = "<group>"; };
+		05115F8B26876F2300172550 /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
+		05115F8C26876F2300172550 /* SF-Pro-Rounded-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Ultralight.otf"; sourceTree = "<group>"; };
+		05115F8D26876F2400172550 /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
 		0517768C26832A0600C895A8 /* Congratulations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Congratulations.storyboard; sourceTree = "<group>"; };
 		05596F962684E77100F5769E /* NewPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlayViewController.swift; sourceTree = "<group>"; };
 		05596F9A2684F73700F5769E /* PartiturCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartiturCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -178,6 +196,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05115F8426876F0900172550 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				05115F8926876F2300172550 /* SF-Pro-Rounded-Black.otf */,
+				05115F8B26876F2300172550 /* SF-Pro-Rounded-Bold.otf */,
+				05115F8626876F2200172550 /* SF-Pro-Rounded-Heavy.otf */,
+				05115F8A26876F2300172550 /* SF-Pro-Rounded-Light.otf */,
+				05115F8526876F2200172550 /* SF-Pro-Rounded-Medium.otf */,
+				05115F8D26876F2400172550 /* SF-Pro-Rounded-Regular.otf */,
+				05115F8726876F2200172550 /* SF-Pro-Rounded-Semibold.otf */,
+				05115F8826876F2200172550 /* SF-Pro-Rounded-Thin.otf */,
+				05115F8C26876F2300172550 /* SF-Pro-Rounded-Ultralight.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		05F51A8D267F8B830084EEA3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +273,7 @@
 		8F26BD1B2677919800F020D7 = {
 			isa = PBXGroup;
 			children = (
+				05115F8426876F0900172550 /* Font */,
 				8FCCCCC82677D7E5009FAC16 /* Sounds */,
 				8F26BD262677919800F020D7 /* BimbarAngklungApp */,
 				8F26BD402677919900F020D7 /* BimbarAngklungAppTests */,
@@ -424,11 +459,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05115F9126876F2400172550 /* SF-Pro-Rounded-Thin.otf in Resources */,
 				368BCB012686BCF700AA4ADD /* E5g.aiff in Resources */,
+				05115F9326876F2400172550 /* SF-Pro-Rounded-Light.otf in Resources */,
 				055C9AA6268312AE00BC66A2 /* PlayScreenMultiplayer .storyboard in Resources */,
 				368BCB0E2686BCF700AA4ADD /* G4g.aiff in Resources */,
 				050464C9268746EE00536673 /* C5.aiff in Resources */,
 				3686881A268742500093AD7C /* Angklung Sounds in Resources */,
+				05115F9526876F2400172550 /* SF-Pro-Rounded-Ultralight.otf in Resources */,
 				05F51A91267F8C6A0084EEA3 /* MPC.storyboard in Resources */,
 				050464C8268746EE00536673 /* C4.aiff in Resources */,
 				050464C6268746EE00536673 /* F4.aiff in Resources */,
@@ -438,6 +476,7 @@
 				8F26BD372677919900F020D7 /* LaunchScreen.storyboard in Resources */,
 				368BCB0A2686BCF700AA4ADD /* C5g.aiff in Resources */,
 				368BCB052686BCF700AA4ADD /* C6g.aiff in Resources */,
+				05115F9626876F2400172550 /* SF-Pro-Rounded-Regular.otf in Resources */,
 				368BCB082686BCF700AA4ADD /* A4g.aiff in Resources */,
 				368BCB032686BCF700AA4ADD /* A5g.aiff in Resources */,
 				368BCB0D2686BCF700AA4ADD /* F5g.aiff in Resources */,
@@ -445,16 +484,21 @@
 				055C9AAC2683149A00BC66A2 /* Badges.storyboard in Resources */,
 				050464CB268746EE00536673 /* B4.aiff in Resources */,
 				05D4F9D72685CFC8009D8DD3 /* NewPlayScreen.storyboard in Resources */,
+				05115F9226876F2400172550 /* SF-Pro-Rounded-Black.otf in Resources */,
 				360B7697268497970036FC55 /* Suwe.mp3 in Resources */,
 				8F26BD342677919900F020D7 /* Assets.xcassets in Resources */,
 				368BCB022686BCF700AA4ADD /* D5g.aiff in Resources */,
 				050464CC268746EE00536673 /* G4.aiff in Resources */,
 				050464C7268746EE00536673 /* D4.aiff in Resources */,
 				050464C5268746EE00536673 /* A4.aiff in Resources */,
+				05115F8E26876F2400172550 /* SF-Pro-Rounded-Medium.otf in Resources */,
 				368BCB0B2686BCF700AA4ADD /* B4g.aiff in Resources */,
 				368BCB0C2686BCF700AA4ADD /* C4g.aiff in Resources */,
+				05115F9426876F2400172550 /* SF-Pro-Rounded-Bold.otf in Resources */,
 				368BCB072686BCF700AA4ADD /* B5g.aiff in Resources */,
+				05115F9026876F2400172550 /* SF-Pro-Rounded-Semibold.otf in Resources */,
 				0517768D26832A0600C895A8 /* Congratulations.storyboard in Resources */,
+				05115F8F26876F2400172550 /* SF-Pro-Rounded-Heavy.otf in Resources */,
 				368BCB092686BCF700AA4ADD /* E4g.aiff in Resources */,
 				050464CA268746EE00536673 /* E4.aiff in Resources */,
 				8F26BD2F2677919800F020D7 /* Main.storyboard in Resources */,
