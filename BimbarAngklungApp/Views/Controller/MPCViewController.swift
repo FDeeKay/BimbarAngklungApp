@@ -221,6 +221,8 @@ class MPCViewController: UIViewController, MCSessionDelegate, MCBrowserViewContr
         buttonA4.setImage(UIImage(named: "Free Play - 6_A (off)"), for: .normal)
         buttonB4.setImage(UIImage(named: "Free Play - 7_B (off)"), for: .normal)
         buttonC5.setImage(UIImage(named: "Free Play - 8_C' (off)"), for: .normal)
+        hostButton.backgroundColor = UIColor.white
+        guestButton.backgroundColor = UIColor.white
     }
     
 
@@ -230,7 +232,7 @@ class MPCViewController: UIViewController, MCSessionDelegate, MCBrowserViewContr
             textLyric.removeFirst()
             partiturCollectionView.reloadData()
             
-            switch currentKey {
+            switch textKey[0] {
             case "C":
                 imageHandSign.image = UIImage(named: "1_C")
 
@@ -276,7 +278,7 @@ class MPCViewController: UIViewController, MCSessionDelegate, MCBrowserViewContr
             partiturCollectionView.reloadData()
         }
         
-        switch keyTapped {
+        switch textKey[0] {
         case "C":
             imageHandSign.image = UIImage(named: "1_C")
 
@@ -315,6 +317,7 @@ class MPCViewController: UIViewController, MCSessionDelegate, MCBrowserViewContr
         if segue.identifier == "GoToCongrats" {
             let congratulationsViewController = segue.destination as? CongratulationsViewController
             congratulationsViewController?.modalPresentationStyle = .fullScreen
+            congratulationsViewController?.previousPage = "MPCBoard"
         }
     }
     
@@ -327,12 +330,14 @@ class MPCViewController: UIViewController, MCSessionDelegate, MCBrowserViewContr
 
     //button actions
     @IBAction func hostButton(_ sender: Any) {
-        hostButton.backgroundColor = .green
         startHosting()
+        resetButton()
+        hostButton.backgroundColor = .green
     }
     
     @IBAction func guestButton(_ sender: Any) {
         joinSession()
+        resetButton()
         guestButton.backgroundColor = .green
     }
     

@@ -76,8 +76,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="khp-Ta-Ikl"/>
                     <connections>
+                        <outlet property="playAgainButton" destination="J8W-Ke-iJ4" id="1A1-8z-Nea"/>
                         <segue destination="No2-0c-QCe" kind="showDetail" identifier="GoToPlayScreen" id="A0e-jv-jP5"/>
                         <segue destination="RSZ-Fn-Wa5" kind="show" identifier="GoToSelectSong" id="BxC-Ul-dIz"/>
+                        <segue destination="zRz-GW-fVJ" kind="show" identifier="GoToMPCBoard" id="mst-Z4-9Ia"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sbz-aJ-wTr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -101,6 +103,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eCR-KU-3aR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6325" y="-92"/>
+        </scene>
+        <!--MPCBoard-->
+        <scene sceneID="2Ms-0h-Dr5">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MPCBoard" storyboardName="MPC" referencedIdentifier="MPCBoard" id="zRz-GW-fVJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Zqm-lN-NmN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hK5-nf-2j7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6688" y="-92"/>
         </scene>
     </scenes>
     <resources>

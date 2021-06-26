@@ -11,7 +11,6 @@ import AVFoundation
 class NewPlayViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var partiturCollectionView: UICollectionView!
-//    @IBOutlet weak var labelNot: UILabel!
     
     var myNot : String = ""
     
@@ -196,7 +195,7 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
         partiturCollectionView.reloadData()
         }
         
-        switch keyTapped {
+        switch textKey[0] {
         case "C":
             imageHandSign.image = UIImage(named: "1_C")
         case "D":
@@ -230,6 +229,7 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
         if segue.identifier == "GoToCongratulations" {
             let congratulationsViewController = segue.destination as? CongratulationsViewController
             congratulationsViewController?.modalPresentationStyle = .fullScreen
+            congratulationsViewController?.previousPage = "NewPlayScreen"
         }
     }
 
