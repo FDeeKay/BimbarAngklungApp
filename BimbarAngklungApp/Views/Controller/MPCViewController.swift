@@ -305,8 +305,16 @@ class MPCViewController: UIViewController, MCSessionDelegate, MCBrowserViewContr
             print("gak milih key")
         }
         
+        // after finished playing
         if textKey[0] == ""{
-            performSegue(withIdentifier: "GoToCongratulations", sender: self)
+            performSegue(withIdentifier: "GoToCongrats", sender: self)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "GoToCongrats" {
+            let congratulationsViewController = segue.destination as? CongratulationsViewController
+            congratulationsViewController?.modalPresentationStyle = .fullScreen
         }
     }
     
@@ -319,11 +327,13 @@ class MPCViewController: UIViewController, MCSessionDelegate, MCBrowserViewContr
 
     //button actions
     @IBAction func hostButton(_ sender: Any) {
+        hostButton.backgroundColor = .green
         startHosting()
     }
     
     @IBAction func guestButton(_ sender: Any) {
         joinSession()
+        guestButton.backgroundColor = .green
     }
     
     @IBAction func sendButton(_ sender: Any) {
@@ -390,7 +400,6 @@ class MPCViewController: UIViewController, MCSessionDelegate, MCBrowserViewContr
                 updateKey(status: String(splitText[0]), currentKey: String(splitText[1]))
                 self.numberLabel.text = text
                 self.playSound() // func masukin ke data received
-             
             }
         }
     }

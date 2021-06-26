@@ -163,14 +163,14 @@
 		05F51A8D267F8B830084EEA3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8F26BD352677919900F020D7 /* LaunchScreen.storyboard */,
+				05019B1226810B53009D2B7C /* Opening.storyboard */,
 				8F26BD2D2677919800F020D7 /* Main.storyboard */,
 				05F51A90267F8C6A0084EEA3 /* MPC.storyboard */,
-				05019B1226810B53009D2B7C /* Opening.storyboard */,
 				055C9AA5268312AE00BC66A2 /* PlayScreenMultiplayer .storyboard */,
-				8F26BD352677919900F020D7 /* LaunchScreen.storyboard */,
-				055C9AAB2683149A00BC66A2 /* Badges.storyboard */,
 				05D4F9D62685CFC8009D8DD3 /* NewPlayScreen.storyboard */,
 				0517768C26832A0600C895A8 /* Congratulations.storyboard */,
+				055C9AAB2683149A00BC66A2 /* Badges.storyboard */,
 				05F51A8F267F8C120084EEA3 /* Cell */,
 				05F51A8E267F8BE40084EEA3 /* Controller */,
 			);

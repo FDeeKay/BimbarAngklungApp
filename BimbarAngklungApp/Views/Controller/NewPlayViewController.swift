@@ -74,7 +74,6 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
         cell.labelText.text = textLyric[indexPath.row]
         
         return cell
-
     }
     
         // button sound and shake
@@ -83,7 +82,6 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
         angklungNote = 1
         resetButton()
         buttonC4.setImage(UIImage(named: "Free Play - 1_C (on)"), for: .normal)
-        
         do{
             angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "C4", ofType: "aiff") ?? ""))
             keyTapped = "C"
@@ -97,7 +95,6 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
         angklungNote = 2
         resetButton()
         buttonD4.setImage(UIImage(named: "Free Play - 2_D (on)"), for: .normal)
-        
         do{
             angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "D4", ofType: "aiff") ?? ""))
             keyTapped = "D"
@@ -111,7 +108,6 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
         angklungNote = 3
         resetButton()
         buttonE4.setImage(UIImage(named: "Free Play - 3_E (on)"), for: .normal)
-        
         do{
             angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "E4", ofType: "aiff") ?? ""))
             keyTapped = "E"
@@ -125,7 +121,6 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
         angklungNote = 4
         resetButton()
         buttonF4.setImage(UIImage(named: "Free Play - 4_F (on)"), for: .normal)
-        
         do{
             angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "F4", ofType: "aiff") ?? ""))
             keyTapped = "F"
@@ -139,7 +134,6 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
         angklungNote = 5
         resetButton()
         buttonG4.setImage(UIImage(named: "Free Play - 5_G (on)"), for: .normal)
-        
         do{
             angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "G4", ofType: "aiff") ?? ""))
             keyTapped = "G"
@@ -153,7 +147,6 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
         angklungNote = 6
         resetButton()
         buttonA4.setImage(UIImage(named: "Free Play - 6_A (on)"), for: .normal)
-        
         do{
             angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "A4", ofType: "aiff") ?? ""))
             keyTapped = "A"
@@ -167,7 +160,6 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
         angklungNote = 7
         resetButton()
         buttonB4.setImage(UIImage(named: "Free Play - 7_B (on)"), for: .normal)
-        
         do{
             angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "B4", ofType: "aiff") ?? ""))
             keyTapped = "B"
@@ -181,7 +173,6 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
         angklungNote = 8
         resetButton()
         buttonC5.setImage(UIImage(named: "Free Play - 8_C' (on)"), for: .normal)
-        
         do{
             angklungSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "C5", ofType: "aiff") ?? ""))
             keyTapped = "C'"
@@ -208,25 +199,18 @@ class NewPlayViewController: UIViewController, UICollectionViewDelegate, UIColle
         switch keyTapped {
         case "C":
             imageHandSign.image = UIImage(named: "1_C")
-
         case "D":
             imageHandSign.image = UIImage(named: "2_D")
-
         case "E":
             imageHandSign.image = UIImage(named: "3_E")
-            
         case "F":
             imageHandSign.image = UIImage(named: "4_F")
-            
         case "G":
             imageHandSign.image = UIImage(named: "5_G")
-            
         case "A":
             imageHandSign.image = UIImage(named: "6_A")
-            
         case "B":
             imageHandSign.image = UIImage(named: "7_B")
-        
         case "C'":
             imageHandSign.image = UIImage(named: "8_C'")
             
