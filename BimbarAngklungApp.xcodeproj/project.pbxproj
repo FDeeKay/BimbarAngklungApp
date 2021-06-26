@@ -23,6 +23,7 @@
 		05F51A93267F8CD20084EEA3 /* MPCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F51A92267F8CD20084EEA3 /* MPCViewController.swift */; };
 		05F51A97267F9DE00084EEA3 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F51A96267F9DE00084EEA3 /* Song.swift */; };
 		360B7697268497970036FC55 /* Suwe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 360B7696268497970036FC55 /* Suwe.mp3 */; };
+		3686881A268742500093AD7C /* Angklung Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 36868819268742500093AD7C /* Angklung Sounds */; };
 		368BCB002686BCF700AA4ADD /* G5.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 368BCAF12686BCF600AA4ADD /* G5.aiff */; };
 		368BCB012686BCF700AA4ADD /* E5.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 368BCAF22686BCF600AA4ADD /* E5.aiff */; };
 		368BCB022686BCF700AA4ADD /* D5.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 368BCAF32686BCF600AA4ADD /* D5.aiff */; };
@@ -93,6 +94,7 @@
 		05F51A92267F8CD20084EEA3 /* MPCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCViewController.swift; sourceTree = "<group>"; };
 		05F51A96267F9DE00084EEA3 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		360B7696268497970036FC55 /* Suwe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Suwe.mp3; sourceTree = "<group>"; };
+		36868819268742500093AD7C /* Angklung Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Angklung Sounds"; sourceTree = "<group>"; };
 		368BCAF12686BCF600AA4ADD /* G5.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = G5.aiff; sourceTree = "<group>"; };
 		368BCAF22686BCF600AA4ADD /* E5.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = E5.aiff; sourceTree = "<group>"; };
 		368BCAF32686BCF600AA4ADD /* D5.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = D5.aiff; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				360B7696268497970036FC55 /* Suwe.mp3 */,
+				36868819268742500093AD7C /* Angklung Sounds */,
 				368BCAF92686BCF700AA4ADD /* A4.aiff */,
 				368BCAF42686BCF600AA4ADD /* A5.aiff */,
 				368BCAFC2686BCF700AA4ADD /* B4.aiff */,
@@ -400,6 +403,7 @@
 				368BCB012686BCF700AA4ADD /* E5.aiff in Resources */,
 				055C9AA6268312AE00BC66A2 /* PlayScreenMultiplayer .storyboard in Resources */,
 				368BCB0E2686BCF700AA4ADD /* G4.aiff in Resources */,
+				3686881A268742500093AD7C /* Angklung Sounds in Resources */,
 				05F51A91267F8C6A0084EEA3 /* MPC.storyboard in Resources */,
 				368BCB042686BCF700AA4ADD /* D4.aiff in Resources */,
 				05019B1326810B53009D2B7C /* Opening.storyboard in Resources */,
