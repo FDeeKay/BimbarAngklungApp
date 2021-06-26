@@ -79,6 +79,14 @@
 
 /* Begin PBXFileReference section */
 		05019B1226810B53009D2B7C /* Opening.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Opening.storyboard; sourceTree = "<group>"; };
+		050464BD2687458D00536673 /* C4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = C4.aiff; sourceTree = "<group>"; };
+		050464BE2687458D00536673 /* E4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = E4.aiff; sourceTree = "<group>"; };
+		050464BF2687458D00536673 /* D4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = D4.aiff; sourceTree = "<group>"; };
+		050464C02687458D00536673 /* A4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = A4.aiff; sourceTree = "<group>"; };
+		050464C12687458D00536673 /* C5.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = C5.aiff; sourceTree = "<group>"; };
+		050464C22687458D00536673 /* B4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = B4.aiff; sourceTree = "<group>"; };
+		050464C32687458D00536673 /* G4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = G4.aiff; sourceTree = "<group>"; };
+		050464C42687458D00536673 /* F4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = F4.aiff; sourceTree = "<group>"; };
 		0517768C26832A0600C895A8 /* Congratulations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Congratulations.storyboard; sourceTree = "<group>"; };
 		05596F962684E77100F5769E /* NewPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlayViewController.swift; sourceTree = "<group>"; };
 		05596F9A2684F73700F5769E /* PartiturCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartiturCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -277,6 +285,14 @@
 			isa = PBXGroup;
 			children = (
 				360B7696268497970036FC55 /* Suwe.mp3 */,
+				050464C02687458D00536673 /* A4.aiff */,
+				050464C22687458D00536673 /* B4.aiff */,
+				050464BD2687458D00536673 /* C4.aiff */,
+				050464C12687458D00536673 /* C5.aiff */,
+				050464BF2687458D00536673 /* D4.aiff */,
+				050464BE2687458D00536673 /* E4.aiff */,
+				050464C42687458D00536673 /* F4.aiff */,
+				050464C32687458D00536673 /* G4.aiff */,
 				36868819268742500093AD7C /* Angklung Sounds */,
 				368BCAF92686BCF700AA4ADD /* A4g.aiff */,
 				368BCAF42686BCF600AA4ADD /* A5g.aiff */,
