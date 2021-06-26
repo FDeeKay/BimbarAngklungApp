@@ -218,7 +218,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YGk-Gl-53w">
-                                <rect key="frame" x="0.0" y="351" width="390" height="80"/>
+                                <rect key="frame" x="0.0" y="333" width="390" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lcd-ru-8ww">
@@ -229,10 +229,6 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3_E" translatesAutoresizingMaskIntoConstraints="NO" id="XhQ-wv-dbL">
-                                <rect key="frame" x="114" y="220" width="163" height="135"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose your role!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQH-k1-aNw">
                                 <rect key="frame" x="16" y="166" width="170" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -240,6 +236,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Angklung" translatesAutoresizingMaskIntoConstraints="NO" id="8di-JX-HA0">
+                                <rect key="frame" x="139" y="421" width="113" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3_E" translatesAutoresizingMaskIntoConstraints="NO" id="XhQ-wv-dbL">
+                                <rect key="frame" x="114" y="190" width="163" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kaE-8S-IdQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -268,6 +272,7 @@
     </scenes>
     <resources>
         <image name="3_E" width="477" height="276"/>
+        <image name="Angklung" width="630" height="882"/>
         <image name="Free Play - 1_C (off)" width="165" height="165"/>
         <image name="Free Play - 2_D (off)" width="165" height="165"/>
         <image name="Free Play - 3_E (off)" width="165" height="165"/>
