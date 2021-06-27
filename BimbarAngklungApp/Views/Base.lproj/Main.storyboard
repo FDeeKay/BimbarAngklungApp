@@ -577,7 +577,9 @@
                         <viewLayoutGuide key="safeArea" id="tik-FB-ho1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="aiV-SY-GuQ"/>
+                    <navigationItem key="navigationItem" id="aiV-SY-GuQ">
+                        <barButtonItem key="backBarButtonItem" title="Main Screen" id="Tcz-KJ-Rdi"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="buttonA4" destination="eXG-Tv-oVI" id="DTk-Mn-08S"/>
                         <outlet property="buttonB4" destination="kzY-Ci-34F" id="Z4r-E5-ZeU"/>
