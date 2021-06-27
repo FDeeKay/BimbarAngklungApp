@@ -87,6 +87,17 @@ class MPCViewController: UIViewController, MCSessionDelegate, MCBrowserViewContr
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "partiturCell", for: indexPath) as! PartiturCollectionViewCell
+        
+        cell.labelKey.textColor = .black
+        cell.labelText.textColor = .black
+        
+        // kasih wanra urutan ke 0
+        if(indexPath.item == 0){
+            cell.labelKey.textColor = .green
+            cell.labelText.textColor = .green
+        }
+        
+        
         cell.labelKey.text = textKey[indexPath.row]
         
         cell.labelText.text = textLyric[indexPath.row]
