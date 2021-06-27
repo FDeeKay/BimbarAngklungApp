@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.isTranslucent = true
         // Do any additional setup after loading the view.
     }
-
+    
     @IBOutlet weak var mainImage: UIImageView!
     
     

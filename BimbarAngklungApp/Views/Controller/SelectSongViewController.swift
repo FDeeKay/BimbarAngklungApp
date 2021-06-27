@@ -29,6 +29,11 @@ class SelectSongViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.songSelectionImage.layer.cornerRadius = 10
         
         cell.isUserInteractionEnabled = nama2Lagu[indexPath.row] == "Suwe Ora Jamu"
+        
+        if nama2Lagu[indexPath.row] != "Suwe Ora Jamu"{
+            cell.kotakDalamCell.layer.backgroundColor = UIColor.gray.cgColor
+            cell.kotakDalamCell.layer.opacity = 0.5
+        }
                 
                 return cell
 
@@ -82,9 +87,9 @@ class SelectSongViewController: UIViewController, UITableViewDelegate, UITableVi
     
     var nama2Lagu:[String] = ["Suwe Ora Jamu", "Yamko Rambe Yamko", "Halo Halo Bandung"]
     
-    var pembuat2Lagu:[String] = ["Lorem", "Ipsum", "Ismail Marzuki"]
+    var pembuat2Lagu:[String] = ["R.C. Hardjosubroto", "Unknown", "Ismail Marzuki"]
     
-    var deskripsi2Lagu:[String] = ["Suwe ora jamu adalah lagu tradisional yang berasal dari Jawa Barat", "Yamko Rambe Yamko adalah lagu tradisional papua lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum", "Halo halo bandung adalah lagu nasional"]
+    var deskripsi2Lagu:[String] = ["Lagu suwe ora jamu diciptakan oleh R.C. Hardjosubroto. Lagu ini merupakan lagu daerah jawa yang bercerita tentang pertemuan kembali setelah sekkian lama. Alat musik daerah yang digunakan beragam dan bisa dipadupadankan menajdi satu untuk mengiringi lagu ini.", "This song is currently locked. Be on the lookout for future updates", "This song is currently locked. Be on the lookout for future updates"]
     
     var genre2Lagu:[String] = ["Lagu Daerah", "Lagu Daerah", "Lagu Nasional"]
 }
