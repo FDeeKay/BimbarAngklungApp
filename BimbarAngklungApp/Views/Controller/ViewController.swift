@@ -21,8 +21,10 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
+        super.viewDidAppear(true)
         // Do any additional setup after loading the view.
     }
+    
     
     @IBOutlet weak var mainImage: UIImageView!
     

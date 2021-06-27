@@ -33,10 +33,10 @@
             </objects>
             <point key="canvasLocation" x="1597" y="405"/>
         </scene>
-        <!--View Controller-->
+        <!--How To Play1 View Controller-->
         <scene sceneID="Oms-Pu-qLQ">
             <objects>
-                <viewController id="hu6-mD-e7m" sceneMemberID="viewController">
+                <viewController id="hu6-mD-e7m" customClass="HowToPlay1ViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xvY-cK-9SA">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,20 +44,30 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HTP 1" translatesAutoresizingMaskIntoConstraints="NO" id="gaS-TZ-the">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VZy-OV-tSE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="SLS-Kx-D7n" appends="YES" id="AGf-ZH-alR"/>
+                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="rdl-EB-vld"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rQt-JE-7pz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="SLS-Kx-D7n">
+                    <connections>
+                        <segue destination="dgB-No-7Ci" kind="show" id="mdp-xm-ZSd"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1036.9230769230769" y="1109.7156398104264"/>
         </scene>
-        <!--View Controller-->
+        <!--How To Play2 View Controller-->
         <scene sceneID="T8z-O9-42X">
             <objects>
-                <viewController id="dgB-No-7Ci" sceneMemberID="viewController">
+                <viewController id="dgB-No-7Ci" customClass="HowToPlay2ViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="amb-v5-d8y">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,13 +75,23 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HTP 2" translatesAutoresizingMaskIntoConstraints="NO" id="AQK-UC-9zs">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dyF-1w-YLU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="TvH-tN-1S0" appends="YES" id="fdM-gP-sZS"/>
+                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="mCp-Rj-Jd2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I8K-vv-aPI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="TvH-tN-1S0">
+                    <connections>
+                        <action selector="tapToMainScreen:" destination="dgB-No-7Ci" id="N7y-fp-esq"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1807.6923076923076" y="1109.7156398104264"/>
         </scene>
@@ -145,7 +165,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                     </view>
-                    <navigationItem key="navigationItem" id="tt8-WE-PFd"/>
+                    <navigationItem key="navigationItem" id="tt8-WE-PFd">
+                        <barButtonItem key="rightBarButtonItem" image="info.circle" catalog="system" style="plain" id="vG1-30-zZj">
+                            <connections>
+                                <segue destination="hu6-mD-e7m" kind="show" id="IH3-6B-zwE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="AngklungImage" destination="Sqd-8S-B3L" id="eg3-Dt-MnZ"/>
                         <outlet property="mainImage" destination="yNA-mE-HEp" id="HEG-0f-0np"/>
@@ -615,6 +641,7 @@
         <image name="Main Screen New" width="1125" height="2436"/>
         <image name="New FPS" width="1125" height="2436"/>
         <image name="Pick Song Screen" width="1125" height="2436"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="song1" width="349" height="549"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -67,6 +67,8 @@
 		8F26BD372677919900F020D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F26BD352677919900F020D7 /* LaunchScreen.storyboard */; };
 		8F26BD422677919900F020D7 /* BimbarAngklungAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F26BD412677919900F020D7 /* BimbarAngklungAppTests.swift */; };
 		8F26BD4D2677919900F020D7 /* BimbarAngklungAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F26BD4C2677919900F020D7 /* BimbarAngklungAppUITests.swift */; };
+		8FA397D72688B6EE00B1B7E2 /* HowToPlay2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA397D62688B6EE00B1B7E2 /* HowToPlay2ViewController.swift */; };
+		8FA397D92688B74000B1B7E2 /* HowToPlay1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA397D82688B74000B1B7E2 /* HowToPlay1ViewController.swift */; };
 		8FC1D9252680A629009A2FF5 /* SongInformationModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1D9242680A629009A2FF5 /* SongInformationModalViewController.swift */; };
 		8FCCCCB62677C788009FAC16 /* FreePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCCCCB52677C788009FAC16 /* FreePlayViewController.swift */; };
 		8FCCCCDA26788E8E009FAC16 /* LevelSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCCCCD926788E8E009FAC16 /* LevelSelectionViewController.swift */; };
@@ -160,6 +162,8 @@
 		8F26BD482677919900F020D7 /* BimbarAngklungAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BimbarAngklungAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F26BD4C2677919900F020D7 /* BimbarAngklungAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BimbarAngklungAppUITests.swift; sourceTree = "<group>"; };
 		8F26BD4E2677919900F020D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FA397D62688B6EE00B1B7E2 /* HowToPlay2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlay2ViewController.swift; sourceTree = "<group>"; };
+		8FA397D82688B74000B1B7E2 /* HowToPlay1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlay1ViewController.swift; sourceTree = "<group>"; };
 		8FC1D9242680A629009A2FF5 /* SongInformationModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongInformationModalViewController.swift; sourceTree = "<group>"; };
 		8FCCCCB52677C788009FAC16 /* FreePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreePlayViewController.swift; sourceTree = "<group>"; };
 		8FCCCCD926788E8E009FAC16 /* LevelSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectionViewController.swift; sourceTree = "<group>"; };
@@ -230,6 +234,8 @@
 		05F51A8E267F8BE40084EEA3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8FA397D62688B6EE00B1B7E2 /* HowToPlay2ViewController.swift */,
+				8FA397D82688B74000B1B7E2 /* HowToPlay1ViewController.swift */,
 				3F1223BE26845F05001C437C /* PlayViewController.swift */,
 				8F26BD2B2677919800F020D7 /* ViewController.swift */,
 				8FCCCCE3267B3FC0009FAC16 /* SelectSongViewController.swift */,
@@ -523,6 +529,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FA397D92688B74000B1B7E2 /* HowToPlay1ViewController.swift in Sources */,
 				8FCCCCDA26788E8E009FAC16 /* LevelSelectionViewController.swift in Sources */,
 				3F10AD882682EB4600B23403 /* gifLoader.swift in Sources */,
 				8F26BD2C2677919800F020D7 /* ViewController.swift in Sources */,
@@ -532,6 +539,7 @@
 				8FCCCCDE2678C046009FAC16 /* LevelSelectionViewCell.swift in Sources */,
 				05F51A93267F8CD20084EEA3 /* MPCViewController.swift in Sources */,
 				8F26BD282677919800F020D7 /* AppDelegate.swift in Sources */,
+				8FA397D72688B6EE00B1B7E2 /* HowToPlay2ViewController.swift in Sources */,
 				8FCCCCE02679F3D9009FAC16 /* LevelPlayViewController.swift in Sources */,
 				8FCCCCE4267B3FC0009FAC16 /* SelectSongViewController.swift in Sources */,
 				05596F9C2684F73700F5769E /* PartiturCollectionViewCell.swift in Sources */,
