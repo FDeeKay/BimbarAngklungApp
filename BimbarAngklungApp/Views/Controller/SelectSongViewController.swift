@@ -28,7 +28,7 @@ class SelectSongViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.playTombol.layer.borderColor = UIColor.init(red: 40.0/255.0, green: 67.0/255.0, blue: 61.0/255.0, alpha: 1).cgColor
         cell.songSelectionImage.layer.cornerRadius = 10
         
-        
+        cell.isUserInteractionEnabled = nama2Lagu[indexPath.row] == "Suwe Ora Jamu"
                 
                 return cell
 
@@ -80,11 +80,11 @@ class SelectSongViewController: UIViewController, UITableViewDelegate, UITableVi
         // title nama lagunya, duration panjang lagu, arrNot untuk kunci apa saja yang ada di lagu tersebut, arrDuration adalah berapa lama setiap kunci tersebut dimainkan sebelum pindah ke kunci berikutnya, arrImage untuk gambar hand gesture nya
     ]
     
-    var nama2Lagu:[String] = ["Yamko Rambe Yamko", "Suwe Ora Jamu", "Halo Halo Bandung"]
+    var nama2Lagu:[String] = ["Suwe Ora Jamu", "Yamko Rambe Yamko", "Halo Halo Bandung"]
     
     var pembuat2Lagu:[String] = ["Lorem", "Ipsum", "Ismail Marzuki"]
     
-    var deskripsi2Lagu:[String] = ["Yamko Rambe Yamko adalah lagu tradisional papua lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum", "Suwe ora jamu adalah lagu tradisional yang berasal dari Jawa Barat", "Halo halo bandung adalah lagu nasional"]
+    var deskripsi2Lagu:[String] = ["Suwe ora jamu adalah lagu tradisional yang berasal dari Jawa Barat", "Yamko Rambe Yamko adalah lagu tradisional papua lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum", "Halo halo bandung adalah lagu nasional"]
     
     var genre2Lagu:[String] = ["Lagu Daerah", "Lagu Daerah", "Lagu Nasional"]
 }
