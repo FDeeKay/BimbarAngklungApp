@@ -25,6 +25,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        if Core.shared.isNewUser(){
+            // Show Onboarding
+            let storyboard = UIStoryboard(name: "Opening", bundle: nil);
+            let viewController = storyboard.instantiateViewController(withIdentifier: "Opening1") as! Opening1ViewController;
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+    
     
     @IBOutlet weak var mainImage: UIImageView!
     
@@ -41,3 +51,15 @@ class ViewController: UIViewController {
     
 }
 
+class Core {
+    static let shared = Core()
+    
+    func isNewUser() -> Bool {
+        return !UserDefaults.standard.bool(forKey: "isNewUser")
+    }
+ 
+    func setIsNotNewUser() {
+        UserDefaults.standard.set(true, forKey: "isNewUser")
+    }
+    
+}

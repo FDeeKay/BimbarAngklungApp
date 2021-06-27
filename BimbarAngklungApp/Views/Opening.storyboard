@@ -7,11 +7,16 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Rounded-Regular.otf">
+            <string>SFProRounded-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Opening1 View Controller-->
         <scene sceneID="JZy-KI-UVm">
             <objects>
-                <viewController id="rSt-CU-VUW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Opening1" id="rSt-CU-VUW" customClass="Opening1ViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L6y-lt-4nI">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,65 +29,104 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="onboarding 1 " translatesAutoresizingMaskIntoConstraints="NO" id="1e1-q7-WuN">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DwG-ul-fyW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="iSQ-8S-kRu" appends="YES" id="WOl-Or-RUE"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X2F-Ne-wSo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="iSQ-8S-kRu">
+                    <connections>
+                        <action selector="swipeScreen1:" destination="rSt-CU-VUW" id="rP7-XF-lMJ"/>
+                        <segue destination="SD4-qF-kvg" kind="show" id="aBA-KX-KzU"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-458" y="104"/>
         </scene>
-        <!--View Controller-->
+        <!--Opening2 View Controller-->
         <scene sceneID="EQW-xk-8gO">
             <objects>
-                <viewController id="SD4-qF-kvg" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Opening2" id="SD4-qF-kvg" customClass="Opening2ViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CA1-eO-tu0">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="onboarding 2" translatesAutoresizingMaskIntoConstraints="NO" id="nG3-wJ-ubG">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ph2-Zn-Sh0">
-                                <rect key="frame" x="172" y="732" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gWc-Ng-KLP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="LDB-uz-d0Y" appends="YES" id="1xk-xb-kay"/>
+                            <outletCollection property="gestureRecognizers" destination="pMy-8c-W3f" appends="YES" id="kKV-Vq-nEu"/>
+                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="Lyx-AI-BRI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xbj-MX-ok5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="LDB-uz-d0Y">
+                    <connections>
+                        <segue destination="Nox-PS-YNT" kind="show" id="yRU-h6-KRG"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="pMy-8c-W3f">
+                    <connections>
+                        <action selector="backSwipe2:" destination="SD4-qF-kvg" id="ghM-YY-Tqf"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="430.76923076923077" y="102.3696682464455"/>
         </scene>
-        <!--View Controller-->
+        <!--Opening3 View Controller-->
         <scene sceneID="wB3-uZ-McP">
             <objects>
-                <viewController id="Nox-PS-YNT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Opening3" id="Nox-PS-YNT" customClass="Opening3ViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0lM-lz-xAe">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="onboarding 3" translatesAutoresizingMaskIntoConstraints="NO" id="WNQ-A8-YfC">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5I-e7-zGl">
-                                <rect key="frame" x="172" y="738" width="46" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap Screen to Continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iU0-id-sBj">
+                                <rect key="frame" x="98" y="732" width="194" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WFa-VN-bjG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="uPd-Cz-RCU" appends="YES" id="GnB-5a-4LO"/>
+                            <outletCollection property="gestureRecognizers" destination="Aop-Lf-FQM" appends="YES" id="slv-R5-rMM"/>
+                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="mED-BO-at9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CqL-ah-nMB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="uPd-Cz-RCU">
+                    <connections>
+                        <action selector="tapToMainScreen:" destination="Nox-PS-YNT" id="tGG-Uw-Uka"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="Aop-Lf-FQM">
+                    <connections>
+                        <action selector="swipeBack3:" destination="Nox-PS-YNT" id="FrV-zL-JdA"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1265" y="104"/>
         </scene>
