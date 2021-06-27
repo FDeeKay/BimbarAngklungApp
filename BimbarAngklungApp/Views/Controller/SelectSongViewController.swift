@@ -47,8 +47,8 @@ class SelectSongViewController: UIViewController, UITableViewDelegate, UITableVi
             let viewController = storyboard.instantiateViewController(withIdentifier: "NewPlayScreen")
             self.navigationController?.pushViewController(viewController, animated: true)
         } else {
-            let storyboard = UIStoryboard(name: "PlayScreenMultiplayer ", bundle: nil);
-            let viewController = storyboard.instantiateViewController(withIdentifier: "PickNot")
+            let storyboard = UIStoryboard(name: "MPC", bundle: nil);
+            let viewController = storyboard.instantiateViewController(withIdentifier: "MPCBoard")
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }

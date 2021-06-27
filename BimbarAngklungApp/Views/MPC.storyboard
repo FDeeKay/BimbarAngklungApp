@@ -22,6 +22,16 @@
         </array>
     </customFonts>
     <scenes>
+        <!--SelectSong-->
+        <scene sceneID="iWt-18-aSL">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SelectSong" storyboardName="Main" referencedIdentifier="SelectSong" id="8ka-Wt-rZB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hbc-CL-CbR"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xzb-6A-0u5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="361" y="538"/>
+        </scene>
         <!--Choose Player View Controller-->
         <scene sceneID="6af-uK-yhR">
             <objects>
@@ -73,8 +83,8 @@
                     <connections>
                         <outlet property="multiplayerButton" destination="r3t-SI-rO2" id="uIa-FK-c2c"/>
                         <outlet property="singleplayerButton" destination="FK8-Lg-bfh" id="Aef-Rf-aey"/>
-                        <segue destination="lX3-Fu-EJk" kind="show" identifier="GoToMPC" id="qxB-Jv-FbE"/>
                         <segue destination="aPe-i1-P9V" kind="show" identifier="GoToSelectSong" id="gHl-wz-OuH"/>
+                        <segue destination="8ka-Wt-rZB" kind="show" identifier="GoToSelectSong" id="GAi-xi-sQO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kM-Pw-GHE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -106,7 +116,7 @@
             <objects>
                 <viewController storyboardIdentifier="MPCBoard" id="lX3-Fu-EJk" customClass="MPCViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0ed-Lh-6iF">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gaa-Jh-n0B">

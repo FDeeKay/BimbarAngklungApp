@@ -32,20 +32,20 @@ class ChoosePlayerViewController: UIViewController {
     
     @IBAction func multiplayerButtonTapped(_ sender: Any) {
         modeChosen = "Multiplayer"
-        performSegue(withIdentifier: "GoToMPC", sender: sender)
+        performSegue(withIdentifier: "GoToSelectSong", sender: sender)
         
     }
     @IBAction func singleplayerButtonTapped(_ sender: Any) {
-        
         modeChosen = "SinglePlayer"
         performSegue(withIdentifier: "GoToSelectSong", sender: sender)
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "GoToMPC" {
-            let MPCViewController = segue.destination as? MPCViewController
-            MPCViewController?.modalPresentationStyle = .fullScreen
+        if segue.identifier == "GoToSelectSong" {
+            let SelectSongViewController = segue.destination as? SelectSongViewController
+            SelectSongViewController?.modalPresentationStyle = .fullScreen
+            SelectSongViewController?.modeChosen = modeChosen
         } else if segue.identifier == "GoToSelectSong" {
             let SelectSongViewController = segue.destination as? SelectSongViewController
             SelectSongViewController?.modalPresentationStyle = .fullScreen
