@@ -89,7 +89,7 @@ class SelectSongViewController: UIViewController, UITableViewDelegate, UITableVi
     
     var pembuat2Lagu:[String] = ["R.C. Hardjosubroto", "Unknown", "Ismail Marzuki"]
     
-    var deskripsi2Lagu:[String] = ["Lagu suwe ora jamu diciptakan oleh R.C. Hardjosubroto. Lagu ini merupakan lagu daerah jawa yang bercerita tentang pertemuan kembali setelah sekkian lama. Alat musik daerah yang digunakan beragam dan bisa dipadupadankan menajdi satu untuk mengiringi lagu ini.", "This song is currently locked. Be on the lookout for future updates", "This song is currently locked. Be on the lookout for future updates"]
+    var deskripsi2Lagu:[String] = ["Suwe ora jamu is made by R.C. Hardjosubroto. This song is a traditional Javanese folk song which tells a story of meeting someone again after a very long time. A lot of Indonesian traditional music instruments can be mixed and matched in order to accompany this song.", "This song is currently locked. Be on the lookout for future updates", "This song is currently locked. Be on the lookout for future updates"]
     
     var genre2Lagu:[String] = ["Lagu Daerah", "Lagu Daerah", "Lagu Nasional"]
 }

@@ -23,7 +23,8 @@ class Opening1ViewController: UIViewController {
     }
     
     @IBAction func swipeScreen1(_ sender: Any) {
-        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "Opening2") as! Opening2ViewController
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 

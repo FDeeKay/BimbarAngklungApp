@@ -43,7 +43,6 @@
                 <swipeGestureRecognizer direction="left" id="iSQ-8S-kRu">
                     <connections>
                         <action selector="swipeScreen1:" destination="rSt-CU-VUW" id="rP7-XF-lMJ"/>
-                        <segue destination="SD4-qF-kvg" kind="show" id="aBA-KX-KzU"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -54,7 +53,7 @@
             <objects>
                 <viewController storyboardIdentifier="Opening2" id="SD4-qF-kvg" customClass="Opening2ViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CA1-eO-tu0">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="onboarding 2" translatesAutoresizingMaskIntoConstraints="NO" id="nG3-wJ-ubG">
@@ -75,7 +74,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xbj-MX-ok5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="LDB-uz-d0Y">
                     <connections>
-                        <segue destination="Nox-PS-YNT" kind="show" id="yRU-h6-KRG"/>
+                        <action selector="nextSwipe2:" destination="SD4-qF-kvg" id="h9p-WG-4tO"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="right" id="pMy-8c-W3f">
@@ -91,7 +90,7 @@
             <objects>
                 <viewController storyboardIdentifier="Opening3" id="Nox-PS-YNT" customClass="Opening3ViewController" customModule="BimbarAngklungApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0lM-lz-xAe">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="onboarding 3" translatesAutoresizingMaskIntoConstraints="NO" id="WNQ-A8-YfC">
@@ -100,7 +99,7 @@
                                 <gestureRecognizers/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap Screen to Continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iU0-id-sBj">
-                                <rect key="frame" x="98" y="732" width="194" height="24"/>
+                                <rect key="frame" x="98" y="786" width="194" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -132,9 +131,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="onboarding 1 " width="2250" height="4872"/>
-        <image name="onboarding 2" width="2250" height="4872"/>
-        <image name="onboarding 3" width="2250" height="4872"/>
+        <image name="onboarding 1 " width="375" height="812"/>
+        <image name="onboarding 2" width="375" height="812"/>
+        <image name="onboarding 3" width="375" height="812"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

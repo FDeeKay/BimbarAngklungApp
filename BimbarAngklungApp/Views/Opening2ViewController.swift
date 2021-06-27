@@ -18,6 +18,10 @@ class Opening2ViewController: UIViewController {
         self.navigationItem.hidesBackButton = true
         // Do any additional setup after loading the view.
     }
+    @IBAction func nextSwipe2(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "Opening3") as! Opening3ViewController
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
     @IBAction func backSwipe2(_ sender: Any) {
         navigationController?.popViewController(animated: true)
